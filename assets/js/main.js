@@ -128,7 +128,7 @@
       let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
       let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
       let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-  
+    
       let initIsotope;
       imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
         initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
@@ -138,7 +138,7 @@
           sortBy: sort
         });
       });
-  
+    
       isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
         filters.addEventListener('click', function() {
           isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
@@ -151,7 +151,6 @@
           }
         }, false);
       });
-  
     });
   
   })();

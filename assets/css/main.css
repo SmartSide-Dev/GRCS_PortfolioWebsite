@@ -1960,45 +1960,92 @@
   /*--------------------------------------------------------------
   # Portfolio Section
   --------------------------------------------------------------*/
+ /* Sticky Portfolio Filters */
+ .portfolio .portfolio-filters {
+  padding: 0;
+  margin: 0 auto 60px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden; /* Ensures the filters look connected */
+  position: sticky; /* Make it sticky */
+  top: 85px; /* Adjust according to your navbar height */
+  z-index: 10;
+  background-color: var(--background-color); /* Optional: Give it a background */
+  padding: 20px;
+  box-shadow: 0px 3px 8px 2px rgb(0 0 0 / 22%); /* Optional: Add a subtle shadow */
+}
+
+.portfolio .portfolio-filters li {
+  width: 20%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; /* Smooth transition for all properties */
+  background-color: transparent; /* Default background */
+  border: 1px solid green; /* Border around all filters */
+  color: green; /* Text color */
+  list-style: none;
+  display: inline-block;
+}
+
+.portfolio .portfolio-filters li + li {
+  border-left: 1px solid green; /* Line between filters */
+}
+
+.portfolio .portfolio-filters li:hover {
+  background-color: #1987541c; /* Light blue hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.portfolio .portfolio-filters li.filter-active {
+  background-color: green; /* Active filter background */
+  color: white; /* Active filter text */
+  transition: all 0.4s ease-in-out; /* Smooth transition for active state */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .portfolio .portfolio-filters {
-    padding: 0;
-    margin: 0 auto 20px auto;
-    list-style: none;
-    text-align: center;
+    display: block;
+    top: 65px;
   }
   
+
   .portfolio .portfolio-filters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 10px;
-    line-height: 1;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
+    width: auto; /* Let the width be auto */
+    flex: 1 1 45%; /* Allow two buttons per row */
+    margin: 5px; /* Add some margin for spacing */
+    min-width: 120px; /* Set a minimum width for filters */
   }
-  
-  .portfolio .portfolio-filters li:hover,
-  .portfolio .portfolio-filters li.filter-active {
-    color: var(--accent-color);
+}
+
+@media (max-width: 480px) {
+  .portfolio .portfolio-filters li {
+    flex: 1 1 100%; /* Full width on small screens */
+    margin: 5px 0; /* Vertical margin for better spacing */
   }
-  
-  .portfolio .portfolio-filters li:first-child {
-    margin-left: 0;
+}
+
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-filters li {
+    font-size: 14px;
+    padding: 8px 15px;
   }
-  
-  .portfolio .portfolio-filters li:last-child {
-    margin-right: 0;
-  }
-  
-  @media (max-width: 575px) {
-    .portfolio .portfolio-filters li {
-      font-size: 14px;
-      margin: 0 5px;
-    }
-  }
+}
+
+
+/* Ensure .portfolio-item scrolls behind the sticky filter */
+.portfolio .portfolio-item {
+  position: relative;
+  z-index: 1; /* Ensure it scrolls behind the sticky filters */
+}
+
   
   .portfolio .portfolio-item {
     position: relative;
