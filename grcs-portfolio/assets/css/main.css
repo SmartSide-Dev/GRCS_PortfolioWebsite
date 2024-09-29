@@ -1966,17 +1966,14 @@
 
 .about-background-left {
   position: absolute;
-  left: 0;
-  bottom: -60px; /* Adjust if needed */
-  transform: rotate(180deg); /* Flip vertically */
-  
+  top: -60px;
+  left: 0;  
 }
 
 .about-background-right {
   position: absolute;
+  top: -60px;
   right: 0;
-  bottom: -60px; /* Adjust if needed */
-  transform: rotate(180deg); /* Flip vertically */
 }
 
 .about-background-center {
@@ -2584,14 +2581,17 @@
   }
   
   .background-left {
-    top: -60px;
-    left: 0;
-   
+    position: absolute;
+  left: 0;
+  bottom: -60px; /* Adjust if needed */
+  transform: rotate(180deg); /* Flip vertically */
   }
   
   .background-right {
-    top: -60px;
-    right: 0;
+    position: absolute;
+  right: 0;
+  bottom: -60px; /* Adjust if needed */
+  transform: rotate(180deg); /* Flip vertically */
    
   }
   
