@@ -816,15 +816,21 @@
   --------------------------------------------------------------*/
   .footer {
     color: var(--default-color);
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: rgba(0, 0, 0, 0.9);
     font-size: 14px;
     position: relative;
+    color: #fff;
+    padding: 40px 0;
   }
   
   .footer .footer-top {
     padding-top: 50px;
   }
   
+  .footer .footer-about{
+    border-bottom:1px solid;
+  }
   .footer .footer-about .logo {
     line-height: 1;
     margin-bottom: 25px;
@@ -845,36 +851,22 @@
   
   .footer .footer-about p {
     font-size: 14px;
+    width: auto;
+    text-align: center;
     font-family: var(--heading-font);
+    margin: 20px 0;
   }
-  
-  .footer .social-links a {
-    color: var(--contrast-color);
-    background-color: var(--accent-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    font-size: 16px;
-    margin-right: 10px;
-    transition: 0.3s;
-  }
-  
-  .footer .social-links a:hover {
-    color: var(--contrast-color);
-    background-color: color-mix(in srgb, var(--accent-color) 90%, black 15%);
-  }
+
   
   .footer h4 {
     font-size: 16px;
     font-weight: bold;
     position: relative;
     padding-bottom: 12px;
+    color: #32B44A;
   }
   
-  .footer .footer-links {
+ .footer .footer-links {
     margin-bottom: 30px;
   }
   
@@ -901,33 +893,189 @@
   }
   
   .footer .footer-links ul a {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    /* color: color-mix(in srgb, var(--default-color), transparent 20%); */
+    color: white;
     display: inline-block;
     line-height: 1;
   }
   
   .footer .footer-links ul a:hover {
-    color: var(--accent-color);
+    color: #CDDC29;
+    text-decoration: underline;
   }
   
   .footer .footer-contact p {
     margin-bottom: 5px;
   }
-  
-  .footer .copyright {
-    border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 80%);
-    margin-top: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+     /**/
+ 
+  .footer-container img{
+    pointer-events: none;
   }
   
-  .footer .copyright p {
-    margin-bottom: 0;
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
-  .footer .credits {
-    margin-top: 5px;
-    font-size: 13px;
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-logo-image {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-address{
+    text-align: center;
+    border-top: 1px solid #444;
+    padding: 20px;
+  }
+  
+
+  .footer-address p {
+    color: #aaa;
+  }
+  
+  .hover-title {
+    transition: color 0.3s ease;
+  }
+  
+  .geearr {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .consumer-solution {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .hover-title:hover .geearr {
+    color: #CDDC29;
+  }
+  
+  .hover-title:hover .consumer-solution {
+    color: #32B44A;
+  }
+  
+  .footer-address a {
+    color: #32B44A;
+    text-decoration: none;
+  }
+  .footer-address a:hover {
+    color: #cdea4d;
+  }
+  
+  .footer-social {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .footer-social h4 {
+    color: #4caf50;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons a:hover .fa-facebook-f {
+    color: #3b5998;
+  }
+  
+  .social-icons a:hover .fa-youtube {
+    color: #FF0000;
+  }
+  
+  .social-icons a:hover .fa-instagram {
+    background: linear-gradient(45deg, #F9CE34, #EE2A7B, #6228D7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .social-icons a:hover .fa-linkedin {
+    color: #0077b5;
+  }
+  
+  /* .footer-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-menu-section {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .footer-menu h4 {
+    color: #4caf50;
+    font-weight: 600;
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-menu a {
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-menu a:hover {
+    color: #cdea4d;
+    text-decoration: underline;
+  } */
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    color: #aaa;
+  }
+  
+  .footer-bottom a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   
   /*--------------------------------------------------------------
@@ -1689,9 +1837,16 @@
   /*--------------------------------------------------------------
   # About Section
   --------------------------------------------------------------*/
+  .about{
+    z-index: 1;
+    position: relative; /* Create a context for absolute positioning */
+    overflow: hidden;
+  }
+
   .about .content h3 {
     font-size: 2rem;
     font-weight: 700;
+    
   }
   
   .about .content p {
@@ -1728,6 +1883,134 @@
 .button:not(:last-child){
   margin-bottom : 64px ;
 }
+.about-img{
+  z-index: 1;
+}
+
+.about-us-container{
+  padding:20px;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-top-background {
+  position: absolute; /* Position it absolutely inside the .about section */
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%); /* Center the background image horizontally */
+  z-index: 0; /* Ensure the background image stays behind the container */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-top-background img {
+  width: 17%; /* Adjust the width of the background image */
+  max-width: 50%; /* Set a max width to control its size on larger screens */
+  opacity: 0.6; /* Optional: Make it more subtle */
+  transform: rotate(-90deg); /* Keep the rotation */
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 1024px) {
+  .about-top-background {
+    top: -100px; /* Adjust top spacing for smaller screens */
+  }
+  
+  .about-top-background img {
+    width: 25%; /* Increase the image size slightly for better visibility */
+    max-width: 50%;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .about-top-background {
+    top: -80px; /* Further reduce the top spacing for mobile */
+  }
+  
+  .about-top-background img {
+    width: 35%; /* Increase width for mobile */
+    max-width: 100%; /* Ensure it doesn't go beyond container width */
+    transform: rotate(-90deg); /* Keep the same rotation */
+    z-index: -2;
+  }
+}
+
+/* Media query for very small mobile screens */
+@media (max-width: 480px) {
+  .about-top-background {
+    top: -80px; /* Adjust top position for very small screens */
+  }
+
+  .about-top-background img {
+    width: 35%; /* Make image larger on small screens for better visibility */
+    max-width: 100%;
+  }
+}
+
+
+.about-us-backgrounds {
+  position: absolute; /* Positioning backgrounds behind other content */
+  left: 0;
+  right: 0;
+  z-index: 0; /* Keep it behind content */
+}
+
+.about-background-left,
+.about-background-right,
+.about-background-center {
+  position: absolute;
+  max-width: 100%;
+  opacity: 0.4; /* Adjust opacity as needed */
+}
+
+.about-background-left {
+  position: absolute;
+  left: 0;
+  bottom: -60px; /* Adjust if needed */
+  transform: rotate(180deg); /* Flip vertically */
+  
+}
+
+.about-background-right {
+  position: absolute;
+  right: 0;
+  bottom: -60px; /* Adjust if needed */
+  transform: rotate(180deg); /* Flip vertically */
+}
+
+.about-background-center {
+  position: absolute;
+  left: 50%;
+  bottom: -60px; /* Adjust if needed */
+  transform: translateX(-50%) rotate(180deg); /* Flip vertically */
+}
+
+  
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .about-us-container {
+    height: auto;
+    padding: 20px; /* Remove padding on mobile */
+  }
+
+
+  .about-background-center{
+    width: 60%;
+  }
+
+
+  .about-background-left{
+    display: none;
+  }
+  .about-background-right{
+    display: none;
+  }
+}
+
+
+
+
+
   /*--------------------------------------------------------------
   # Service Cards Section
   --------------------------------------------------------------*/
@@ -2210,9 +2493,11 @@
   .team .team-member {
     background-color: var(--surface-color);
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     height: 100%;
+    z-index: 1; /* Ensure team members stay above background images */
+    padding-top: 0 !important;
   }
   
   .team .team-member .member-img {
@@ -2274,7 +2559,75 @@
     opacity: 1;
     bottom: 15px;
   }
+  .product-backgrounds {
+    position: relative; /* Needed to position children absolutely */
+    width: 100%;
+    height: 100%; /* Ensures it takes up the entire section height */
+    z-index: 0; /* Keeps background images behind content */
+  }
   
+  .product-container {
+    position: relative;
+    width: 100%;
+    max-width: 1500px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Remove the fixed height to allow for dynamic content height */
+  }
+  
+  .product-backgrounds img {
+    position: absolute;
+    max-width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  
+  .background-left {
+    top: -60px;
+    left: 0;
+   
+  }
+  
+  .background-right {
+    top: -60px;
+    right: 0;
+   
+  }
+  
+  .background-center {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .product-container {
+    position: relative;
+    z-index: 1; /* Keeps the text above background images */
+    text-align: center;
+  }
+
+  @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .product-container {
+      height: auto;
+      padding: 20px; /* Remove padding on mobile */
+    }
+  
+  
+    .background-center{
+      width: 60%;
+    }
+  
+  
+    .background-left{
+      display: none;
+    }
+    .background-right{
+      display: none;
+    }
+  }
+  
+
   /*--------------------------------------------------------------
   # Contact Section
   --------------------------------------------------------------*/
