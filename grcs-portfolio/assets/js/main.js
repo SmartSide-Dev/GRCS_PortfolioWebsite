@@ -134,55 +134,103 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
-    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
-    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
-    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
-  
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort,
-        transitionDuration: '0.4s' // Set the duration for transitions
-      });
-    });
-  
-    let debounceTimer;
-    
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        // Clear the previous debounce timer
-        clearTimeout(debounceTimer);
-        
-        // Debounce the sorting process
-        debounceTimer = setTimeout(() => {
-          isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-          this.classList.add('filter-active');
-          initIsotope.arrange({
-            filter: this.getAttribute('data-filter'),
-            sortBy: this.getAttribute('data-sort') || sort // Optionally sort by attribute
-          });
-  
-          // Scroll to the top of the isotope container with an offset
-          const container = isotopeItem.querySelector('.isotope-container');
-          if (container) {
-            const offsetTop = container.getBoundingClientRect().top + window.scrollY - 150; // 120px offset
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Isotope for the container
+    document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+        let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+        let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+        let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+
+        let initIsotope;
+
+        imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+            initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+                itemSelector: '.isotope-item',
+                layoutMode: layout,
+                filter: filter,
+                sortBy: sort,
+                transitionDuration: '0.4s' // Set the duration for transitions
             });
-          }
-  
-          if (typeof aosInit === 'function') {
-            aosInit();
-          }
-        }, 200); // Adjust the debounce time as necessary
-      }, false);
+
+            // Check for the filter parameter in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterValue = urlParams.get('filter');
+
+            // Apply the filter if it exists in the URL
+            if (filterValue) {
+                // Trigger filtering
+                initIsotope.arrange({ filter: filterValue });
+
+                // Set the active filter in the UI
+                isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+                const activeFilter = isotopeItem.querySelector(`.isotope-filters li[data-filter="${filterValue}"]`);
+                if (activeFilter) {
+                    activeFilter.classList.add('filter-active');
+                }
+                // Scroll to the top of the isotope container with an offset
+                scrollToIsotopeContainer(isotopeItem);
+            }
+        });
+
+        // Debounce timer for filtering and sorting
+        let debounceTimer;
+
+        // Event listeners for filter items
+        isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+            filters.addEventListener('click', function() {
+                // Clear the previous debounce timer
+                clearTimeout(debounceTimer);
+
+                // Debounce the filtering process
+                debounceTimer = setTimeout(() => {
+                    // Remove the active class from the previously active filter
+                    isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+
+                    // Add the active class to the clicked filter
+                    this.classList.add('filter-active');
+
+                    // Apply the filter
+                    const filterValue = this.getAttribute('data-filter');
+                    initIsotope.arrange({
+                        filter: filterValue,
+                        sortBy: this.getAttribute('data-sort') || sort // Optionally sort by attribute
+                    });
+
+                    // Update the URL to reflect the current filter
+                    const currentUrl = new URL(window.location.href);
+                    currentUrl.searchParams.set('filter', filterValue);
+                    history.pushState(null, '', currentUrl); // Update the URL without reloading the page
+
+                    // Scroll to the top of the isotope container with an offset
+                    scrollToIsotopeContainer(isotopeItem);
+
+                    // Initialize AOS if applicable
+                    if (typeof aosInit === 'function') {
+                        aosInit();
+                    }
+                }, 200); // Adjust debounce time as necessary
+            }, false);
+        });
     });
-  });
+});
+
+// Function to scroll to the isotope container with the correct offset
+function scrollToIsotopeContainer(isotopeItem) {
+    const container = isotopeItem.querySelector('.isotope-container');
+    const pageTitle = document.querySelector('.page-title');
+
+    if (container && pageTitle) {
+        const pageTitleHeight = pageTitle.offsetHeight; // Get the height of the page title
+        const offsetTop = container.getBoundingClientRect().top + window.scrollY - (pageTitleHeight + 20); // Use page title height + an additional offset
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
+
+
   
 })();
 
@@ -216,3 +264,4 @@ dots.forEach((dot, index) => {
 
 // Auto-slide functionality
 setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
