@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMm2G9OM/92kNIDm4e19jXOg5G2S5gHDf3XqZm" crossorigin="anonymous">
+
 
   <!-- Favicons -->
   <link href="assets/img/logos/logo.png" rel="icon">
@@ -35,12 +38,10 @@
 </head>
 
 <body class="product-details-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div
-      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between gap-20">
+  <header id="header" class="header d-flex align-items-center fixed-top ">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-evenly gap-20">
 
-
-
+      <!-- Back Button -->
       <div class="back-btn-container">
         <a href="products.html" class="button type--B">
           <div class="button__line"></div>
@@ -51,21 +52,112 @@
         </a>
       </div>
 
-
+      <!-- Logo -->
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logos/logo.png" alt="">
         <h1 class="sitename">GEEARR CONSUMER SOLUTIONS</h1>
       </a>
-
-
-      <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
-
-
-      <!-- Login Button -->
-
     </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Enter product code or name ro search... " />
+      <i class="fas fa-search search-icon"></i>
+      <div id="search-results" class="search-results"></div>
+    </div>
+
+    <style>
+      .search-container {
+        position: relative;
+        width: 80%;
+        max-width: 400px;
+        margin-right: 25px;
+      }
+
+      #search-bar {
+        width: 100%;
+        padding: 12px 40px 12px 16px;
+        /* Add padding to accommodate the icon */
+        border: none;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        font-size: 16px;
+      }
+
+      #search-bar:focus {
+        outline: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .search-icon {
+        position: absolute;
+        right: 16px;
+        /* Adjust based on padding */
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+        /* Icon color */
+        transition: color 0.3s;
+      }
+
+      .search-icon:hover {
+        color: #32B44A;
+        /* Change icon color on hover */
+      }
+
+      .search-results {
+        position: absolute;
+        top: 48px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-height: 250px;
+        overflow-y: auto;
+        z-index: 1000;
+      }
+
+      .search-results div {
+        padding: 12px 16px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .search-results div:hover {
+        background-color: #f0f0f0;
+      }
+
+      .search-results div.active {
+        background-color: #32B44A;
+        color: white;
+      }
+
+      .search-results div:active {
+        background-color: #3aca55;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .product-details {
+          margin-top: 120px !important;
+        }
+        .search-container{
+          margin-right: 0;
+        }
+      }
+    </style>
+
+
   </header>
+
+
 
 
   <main class="main">
@@ -104,7 +196,8 @@
                   <span class="button__text">BUY</span>
                   <div class="button__drow1"></div>
                   <div class="button__drow2"></div>
-                </a></div>
+                </a>
+              </div>
             </div>
             <div class="product-description" data-aos="fade-up" data-aos-delay="300">
               <h4>Description</h4>
@@ -112,7 +205,7 @@
               <h4>Benefit</h4>
               <p id="product-benefit"></p>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -179,7 +272,7 @@
           code: "HC1106",
           mrp: 68.00,
           discountPrice: 64.00,
-          businessValue: 0 ,
+          businessValue: 0,
           description: "A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.",
           benefit: "Tough on grime but gentle on surfaces, ensuring your kitchen stays spotless without scratching. Ergonomic design provides a comfortable grip, making cleaning tasks quick and easy. Versatile for various kitchen items, from cookware to countertops, helping maintain a hygienic cooking environment.",
         },
@@ -193,7 +286,7 @@
           description: "A versatile cleaning scrubber designed to tackle tough grime and stains on various surfaces, ensuring a deep clean with minimal effort.",
           benefit: "Effectively removes dirt, grease, and stubborn stains from kitchens, bathrooms, and more. Safe for use on multiple surfaces, including countertops, appliances, and tiles. Ergonomic design for comfortable handling, making cleaning easier and more efficient.",
         },
-        
+
 
         // (CE)
         CE1501: {
@@ -218,7 +311,7 @@
         },
 
         //(AC)
-        AC1401:{
+        AC1401: {
           name: "கார் பிளாஸ்டிக் ரீஸ்டோரர் | CAR PLASTIC RESTORER 250ml",
           category: "HOME CARE",
           code: "AC1401",
@@ -228,7 +321,7 @@
           description: " A premium formula designed to rejuvenate and restore faded and weathered plastic surfaces in your vehicle.",
           benefit: " Revives dull and faded plastics, giving them a like-new appearance. Forms a protective barrier against harmful UV rays, preventing future fading and cracking. Provides extended durability, ensuring your vehicle’s plastic surfaces stay looking great for longer.",
         },
-        AC1402:{
+        AC1402: {
           name: "கார் டயர் அல்ட்ரா பிளாக் ஷைனர் | CAR TYER ULTRA BLACK SHINER 250ML",
           category: "HOME CARE",
           code: "AC1402",
@@ -238,7 +331,7 @@
           description: "A premium formula that gives your car tires a deep, long-lasting black shine, enhancing the overall appearance of your vehicle.",
           benefit: "Provides a rich, ultra-black finish to tires. Long-lasting shine that resists dirt and fading. Protects tires from cracking and UV damage. Easy to apply for a sleek, showroom-ready look. Suitable for all tire types.",
         },
-        AC1403:{
+        AC1403: {
           name: "கார் ஸ்கிரீன் வாஷ் | CAR SCREEN WASH 250ml",
           category: "HOME CARE",
           code: "AC1403",
@@ -248,7 +341,7 @@
           description: "A powerful cleaning solution designed to keep your car's windshield clear and spotless, ensuring optimal visibility during every drive.",
           benefit: "Effectively removes dirt, grime, and bugs from the windshield. Enhances visibility for safer driving in all weather conditions. Streak-free formula for a crystal-clear finish. Helps prevent watermarks and smudges on the glass. Suitable for all types of vehicles.",
         },
-        AC1404:{
+        AC1404: {
           name: "கார் டேஷ்போர்டு & இன்டீரியர் பாலிஷ் | CAR DASHBOARD & INTERIOR POLISH 250ml",
           category: "HOME CARE",
           code: "AC1404",
@@ -258,7 +351,7 @@
           description: "A specialized polish formulated to clean, protect, and enhance the appearance of your vehicle's dashboard and interior surfaces.",
           benefit: "Effectively removes dirt, grime, and fingerprints, leaving surfaces spotless. Leaves a sleek, glossy finish that revitalizes the look of your dashboard and interior surfaces. Shields interior materials from harmful UV rays, preventing fading and cracking.",
         },
-        AC1405:{
+        AC1405: {
           name: "கார் பாடி வாஷ் ஷாம்பூ கேர் | CAR BODY WASH SHAMPOO CARE 250ml",
           category: "HOME CARE",
           code: "AC1405",
@@ -268,7 +361,7 @@
           description: "A high-quality shampoo formulated with ultra foam technology to provide a deep clean while enhancing your vehicle's shine.",
           benefit: "Gentle yet effective cleaning formula that is safe for all car surfaces. Creates a rich lather that helps lift and remove stubborn dirt. Leaves a protective layer, enhancing the shine and reducing future dirt buildup. pH-balanced to maintain your car's paint integrity. Easy to rinse off, saving you time and effort during washing.",
         },
-        AC1406:{
+        AC1406: {
           name: "ஜி கோட் விண்ட் ஷீல்டு ப்ரொடக்டர் | G.COAT WINDSHIELD PROTECTOR 50ml",
           category: "HOME CARE",
           code: "AC1406",
@@ -351,7 +444,7 @@
           description: "A gentle, refreshing body wash that hydrates and softens the skin.",
           benefit: "Removes dirt, oil, and impurities without stripping the skin's natural moisture. Enriched with moisturizing ingredients to keep skin soft and smooth. Gentle enough for sensitive skin and daily use.",
         },
-        
+
         PC1309: {
           name: "ஃபேஸ் வாஷ் கேக் | FACE WASH CAKE 30gml",
           category: "PERSONAL CARE",
@@ -364,7 +457,7 @@
         },
 
         //28 th product (towel) data missing
-      
+
 
         // Health care Products Details
         //(CT)
@@ -389,7 +482,8 @@
           description: "A refreshing and natural blend of premium organic tea leaves, offering a pure and wholesome tea experience with energy boost and digestive wellness.",
           benefit: "Rich in antioxidants. Supports digestion and boosts immunity. Free from chemicals and additives.",
         },
-};
+      };
+
 
       document.addEventListener("DOMContentLoaded", () => {
         // Function to fetch product data based on the ID in the URL
@@ -424,6 +518,118 @@
         // Call the function to load the product details
         loadProductDetails();
       });
+
+
+      //search logic
+      document.addEventListener("DOMContentLoaded", () => {
+  const searchBar = document.getElementById("search-bar");
+  const searchResults = document.getElementById("search-results");
+  let currentFocus = -1; // Track current focused search result for keyboard navigation
+
+  // Function to filter products based on input
+  function filterProducts(query) {
+    const lowerCaseQuery = query.toLowerCase();
+    return Object.values(products).filter(product =>
+      product.code.toLowerCase().includes(lowerCaseQuery) ||
+      product.name.toLowerCase().includes(lowerCaseQuery)
+    );
+  }
+
+  // Function to handle selection of a product (redirect)
+  function selectProduct(productCode) {
+    window.location.href = `product-details.html?id=${productCode}`;
+  }
+
+  // Function to handle key navigation (up/down arrows) and Enter key
+  function handleKeyNavigation(e) {
+    const items = searchResults.getElementsByTagName("div");
+
+    if (e.key === "ArrowDown") {
+      currentFocus++;
+      if (currentFocus >= items.length) currentFocus = 0; // Loop back to top
+      setActive(items);
+      scrollToActive(items[currentFocus]);
+    } else if (e.key === "ArrowUp") {
+      currentFocus--;
+      if (currentFocus < 0) currentFocus = items.length - 1; // Loop to bottom
+      setActive(items);
+      scrollToActive(items[currentFocus]);
+    } else if (e.key === "Enter") {
+      e.preventDefault();
+      if (currentFocus > -1) {
+        selectProduct(items[currentFocus].getAttribute("data-code"));
+      }
+    }
+  }
+
+  // Function to set active result for keyboard navigation
+  function setActive(items) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].classList.remove("active");
+    }
+    if (currentFocus >= 0) {
+      items[currentFocus].classList.add("active");
+    }
+  }
+
+  // Function to scroll the search results to bring the active item into view
+  function scrollToActive(activeItem) {
+    if (activeItem) {
+      const itemRect = activeItem.getBoundingClientRect();
+      const containerRect = searchResults.getBoundingClientRect();
+
+      // Check if the active item is out of the visible area of the container
+      if (itemRect.bottom > containerRect.bottom) {
+        // Scroll down to bring the active item into view
+        searchResults.scrollTop += itemRect.bottom - containerRect.bottom;
+      } else if (itemRect.top < containerRect.top) {
+        // Scroll up to bring the active item into view
+        searchResults.scrollTop -= containerRect.top - itemRect.top;
+      }
+    }
+  }
+
+  // Event listener for input in search bar
+  searchBar.addEventListener("input", () => {
+    const query = searchBar.value.trim();
+    searchResults.innerHTML = "";
+    currentFocus = -1;
+
+    if (query.length > 0) {
+      const filteredProducts = filterProducts(query);
+
+      if (filteredProducts.length > 0) {
+        filteredProducts.forEach(product => {
+          const resultDiv = document.createElement("div");
+          resultDiv.textContent = `${product.code} | ${product.name}`;
+          resultDiv.setAttribute("data-code", product.code);
+          resultDiv.addEventListener("click", () => {
+            selectProduct(product.code);
+          });
+          searchResults.appendChild(resultDiv);
+        });
+      } else {
+        const noResultsDiv = document.createElement("div");
+        noResultsDiv.textContent = "No products found.";
+        searchResults.appendChild(noResultsDiv);
+      }
+    }
+  });
+
+  // Listen for keyboard navigation events
+  searchBar.addEventListener("keydown", handleKeyNavigation);
+
+  // Hide search results when clicking outside
+  document.addEventListener("click", (event) => {
+    if (!searchBar.contains(event.target) && !searchResults.contains(event.target)) {
+      searchResults.innerHTML = "";
+    }
+  });
+});
+
+
+
+
 
 
     </script>
