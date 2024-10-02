@@ -2310,6 +2310,7 @@
   margin: 0 auto 60px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   overflow: hidden; /* Ensures the filters look connected */
   position: sticky; /* Make it sticky */
