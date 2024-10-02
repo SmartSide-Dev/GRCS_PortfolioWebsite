@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PRODUCT DETAILS | GEEARR CONSUMER SOLUTION</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link href="assets/img/logos/logo.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="product-details-page">
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between gap-20">
+
+
+
+      <div class="back-btn-container">
+        <a href="products.html" class="button type--B">
+          <div class="button__line"></div>
+          <div class="button__line"></div>
+          <span class="button__text" style="color: white;"><i class="fas fa-arrow-left"></i> BACK</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logos/logo.png" alt="">
+        <h1 class="sitename">GEEARR CONSUMER SOLUTIONS</h1>
+      </a>
+
+
+      <!-- <i class="mobile-nav-toggle d-xl-none bi bi-list"></i> -->
+
+
+      <!-- Login Button -->
+
+    </div>
+  </header>
+
+
+  <main class="main">
+    <!-- Page Title -->
+    <!-- <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/portfolio-page-title-bg.jpg);">
+      <div class="container">
+        <h1>product Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">product Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>End Page Title -->
+
+    <!-- product Details Section -->
+    <section id="product-details" class="product-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 product-image">
+            <img id="product-image" src="" alt="Product Image" class="img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <div class="product-info" data-aos="fade-up" data-aos-delay="200">
+              <h2 id="product-name"></h2>
+              <p>Category: <span id="product-category"></span></p>
+              <p>Code: <span id="product-code"></span></p>
+              <p>MRP: ₹<span id="product-mrp" style="text-decoration: line-through;"></span></p>
+              <p>Discount Price: ₹<span id="product-discount"></span></p>
+              <p>Business Value: <span id="product-bv"></span></p>
+              <div class="btn-container" data-aos="fade-up" data-aos-delay="250">
+                <a href="#" class="button type--B">
+                  <div class="button__line"></div>
+                  <div class="button__line"></div>
+                  <span class="button__text">BUY</span>
+                  <div class="button__drow1"></div>
+                  <div class="button__drow2"></div>
+                </a></div>
+            </div>
+            <div class="product-description" data-aos="fade-up" data-aos-delay="300">
+              <h4>Description</h4>
+              <p id="product-description"></p>
+              <h4>Benefit</h4>
+              <p id="product-benefit"></p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /product Details Section -->
+    <script>
+      const products = {
+        // Home Care Products Details
+        // (HC)
+        HC1101: {
+          name: "பேப்ரிக் லிக்யூட் சோப் ஆயில் | FABRICARE LIQUID DETERGENT 500ml",
+          category: "HOME CARE",
+          code: "HC1101",
+          mrp: 215.00,
+          discountPrice: 195.00,
+          businessValue: 40,
+          description: "A liquid laundry detergent formulated for cleaning and removing stains from fabrics effectively. Suitable for washing clothes, linens, and other textile items.",
+          benefit: "Provides deep cleaning and stain removal while being gentle on fabrics.",
+        },
+        HC1102: {
+          name: "ஜி ஆர் சூப்பர் க்ளோவ் டிஷ் வாஷ் | GR SUPER GLOW DISH WASH 500ml",
+          category: "HOME CARE",
+          code: "HC1102",
+          mrp: 166.00,
+          discountPrice: 148.00,
+          businessValue: 30,
+          description: "A dishwashing liquid designed for cleaning dishes, utensils, and cookware. It helps cut through grease and food residue, leaving dishes sparkling clean.",
+          benefit: "Effective grease-cutting formula, leaving dishes spotlessly clean with a fresh fragrance.",
+        },
+        HC1103: {
+          name: "ஜி ஆர் ஃலோரெக்ஸ் ஃலோர் கிளீனர் | GR FLOREX FLOOR CLEANER 500ml",
+          category: "HOME CARE",
+          code: "HC1103",
+          mrp: 138.00,
+          discountPrice: 127.00,
+          businessValue: 26,
+          description: "A floor cleaning solution suitable for various types of floor surfaces, including tiles, marble, and hardwood. It helps remove dirt, grime, and stains while leaving a fresh scent.",
+          benefit: "Efficiently cleans and refreshes floor surfaces, providing a streak-free finish.",
+        },
+        HC1104: {
+          name: "டாய்லெட் கிளீனர் | GR SANITONE TOILET CLEANER 500ml",
+          category: "HOME CARE",
+          code: "HC1104",
+          mrp: 155.00,
+          discountPrice: 142.00,
+          businessValue: 0,
+          description: "A powerful toilet cleaner formulated to eliminate stains, odors, and germs, leaving your toilet sparkling clean.",
+          benefit: "Strengthens immune response, helping to fend off common illnesses. Contains antioxidants and vitamins for optimal health support. Promotes overall wellness and vitality.",
+        },
+        HC1105: {
+          name: "ஜி ஆர் ஃபேப்ரிக் ஆஃப்டர் வாஷ் |GR FABRICOOL AFTER WASH 250ml",
+          category: "HOME CARE",
+          code: "HC1105",
+          mrp: 146.00,
+          discountPrice: 126.00,
+          businessValue: 11,
+          description: "A premium fabric conditioner designed to soften and refresh your laundry, leaving fabrics feeling luxurious and easy to care for.",
+          benefit: "Enhances softness, making clothes comfortable against the skin. Reduces static cling, preventing garments from sticking together. Infuses a long- lasting fragrance, keeping your laundry smelling fresh. Helps maintain color and reduce fading, prolonging the life of your fabrics.",
+        },
+        HC1106: {
+          name: "கிட்சன் கிளீனர் ஸ்க்ரப் | KITCHEN SCRUB 3pcs (with SS Thread)",
+          category: "HOME CARE",
+          code: "HC1106",
+          mrp: 68.00,
+          discountPrice: 64.00,
+          businessValue: 0 ,
+          description: "A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.",
+          benefit: "Tough on grime but gentle on surfaces, ensuring your kitchen stays spotless without scratching. Ergonomic design provides a comfortable grip, making cleaning tasks quick and easy. Versatile for various kitchen items, from cookware to countertops, helping maintain a hygienic cooking environment.",
+        },
+        HC1108: {
+          name: "மல்டி பர்ப்பஸ் கிளீனிங் ஸ்க்ரப்பர் | MULTI-PURPOSE CLEANING SCRUBBER 1pc",
+          category: "HOME CARE",
+          code: "HC1108",
+          mrp: 135.00,
+          discountPrice: 90.00,
+          businessValue: 0,
+          description: "A versatile cleaning scrubber designed to tackle tough grime and stains on various surfaces, ensuring a deep clean with minimal effort.",
+          benefit: "Effectively removes dirt, grease, and stubborn stains from kitchens, bathrooms, and more. Safe for use on multiple surfaces, including countertops, appliances, and tiles. Ergonomic design for comfortable handling, making cleaning easier and more efficient.",
+        },
+        
+
+        // (CE)
+        CE1501: {
+          name: "மல்டி பர்ப்பஸ் ஸ்டைன் ரிமூவர்  | MULTI-PURPOSE STAIN REMOVER 240ml",
+          category: "HOME CARE",
+          code: "CE1501",
+          mrp: 269.00,
+          discountPrice: 248.00,
+          businessValue: 0,
+          description: "A powerful, versatile stain remover designed to tackle a wide range of tough stains and germs on various surfaces.",
+          benefit: "Effectively removes stains from fabric, carpets, and hard surfaces. Safe for use on multiple materials without causing damage. Saves time and effort with quick stain-lifting action.",
+        },
+        CE1502: {
+          name: "பாத்ரூம் டைல்ஸ் கிளீனர் | BATHROOM TILES CLEANER 500ml",
+          category: "HOME CARE",
+          code: "CE1502",
+          mrp: 390.00,
+          discountPrice: 360.00,
+          businessValue: 0,
+          description: "A powerful and effective cleaner specifically formulated to tackle tough stains, soap scum, and mildew on bathroom tiles, leaving surfaces sparkling clean.",
+          benefit: "Deep cleans and sanitizes, ensuring your bathroom tiles are free from bacteria and grime. Fast-acting formula saves time, allowing for quick and efficient cleaning. Safe for various tile materials, maintaining the integrity and shine of your surfaces.",
+        },
+
+        //(AC)
+        AC1401:{
+          name: "கார் பிளாஸ்டிக் ரீஸ்டோரர் | CAR PLASTIC RESTORER 250ml",
+          category: "HOME CARE",
+          code: "AC1401",
+          mrp: 499.00,
+          discountPrice: 459.00,
+          businessValue: 0,
+          description: " A premium formula designed to rejuvenate and restore faded and weathered plastic surfaces in your vehicle.",
+          benefit: " Revives dull and faded plastics, giving them a like-new appearance. Forms a protective barrier against harmful UV rays, preventing future fading and cracking. Provides extended durability, ensuring your vehicle’s plastic surfaces stay looking great for longer.",
+        },
+        AC1402:{
+          name: "கார் டயர் அல்ட்ரா பிளாக் ஷைனர் | CAR TYER ULTRA BLACK SHINER 250ML",
+          category: "HOME CARE",
+          code: "AC1402",
+          mrp: 499.00,
+          discountPrice: 459.00,
+          businessValue: 0,
+          description: "A premium formula that gives your car tires a deep, long-lasting black shine, enhancing the overall appearance of your vehicle.",
+          benefit: "Provides a rich, ultra-black finish to tires. Long-lasting shine that resists dirt and fading. Protects tires from cracking and UV damage. Easy to apply for a sleek, showroom-ready look. Suitable for all tire types.",
+        },
+        AC1403:{
+          name: "கார் ஸ்கிரீன் வாஷ் | CAR SCREEN WASH 250ml",
+          category: "HOME CARE",
+          code: "AC1403",
+          mrp: 499.00,
+          discountPrice: 459.00,
+          businessValue: 0,
+          description: "A powerful cleaning solution designed to keep your car's windshield clear and spotless, ensuring optimal visibility during every drive.",
+          benefit: "Effectively removes dirt, grime, and bugs from the windshield. Enhances visibility for safer driving in all weather conditions. Streak-free formula for a crystal-clear finish. Helps prevent watermarks and smudges on the glass. Suitable for all types of vehicles.",
+        },
+        AC1404:{
+          name: "கார் டேஷ்போர்டு & இன்டீரியர் பாலிஷ் | CAR DASHBOARD & INTERIOR POLISH 250ml",
+          category: "HOME CARE",
+          code: "AC1404",
+          mrp: 499.00,
+          discountPrice: 459.00,
+          businessValue: 0,
+          description: "A specialized polish formulated to clean, protect, and enhance the appearance of your vehicle's dashboard and interior surfaces.",
+          benefit: "Effectively removes dirt, grime, and fingerprints, leaving surfaces spotless. Leaves a sleek, glossy finish that revitalizes the look of your dashboard and interior surfaces. Shields interior materials from harmful UV rays, preventing fading and cracking.",
+        },
+        AC1405:{
+          name: "கார் பாடி வாஷ் ஷாம்பூ கேர் | CAR BODY WASH SHAMPOO CARE 250ml",
+          category: "HOME CARE",
+          code: "AC1405",
+          mrp: 249.00,
+          discountPrice: 204.00,
+          businessValue: 81_17,//THERE ARE TWO VALUE PV AND BP
+          description: "A high-quality shampoo formulated with ultra foam technology to provide a deep clean while enhancing your vehicle's shine.",
+          benefit: "Gentle yet effective cleaning formula that is safe for all car surfaces. Creates a rich lather that helps lift and remove stubborn dirt. Leaves a protective layer, enhancing the shine and reducing future dirt buildup. pH-balanced to maintain your car's paint integrity. Easy to rinse off, saving you time and effort during washing.",
+        },
+        AC1406:{
+          name: "ஜி கோட் விண்ட் ஷீல்டு ப்ரொடக்டர் | G.COAT WINDSHIELD PROTECTOR 50ml",
+          category: "HOME CARE",
+          code: "AC1406",
+          mrp: 580.00,
+          discountPrice: 520.00,
+          businessValue: 0,
+          description: "A protective solution designed to safeguard windshields from damage and dirt while improving aerodynamics, ensuring clear visibility and smoother driving.",
+          benefit: "Shields windshields from cracks, chips, and scratches. Repels dust, rain, and debris for improved visibility. Easy to apply and remove, maintaining a clean and clear surface. Enhances driving safety by reducing glare and water accumulation.",
+        },
+
+        // Personal Care Products Details
+        // (PC)
+        PC1301: {
+          name: "ஆலோ நோவா மில்க் சோப் | ALOENOVA (Aloevera Milk Soap) 80gm",
+          category: "PERSONAL CARE",
+          code: "PC1301",
+          mrp: 60.00,
+          discountPrice: 0.00,
+          businessValue: 11,
+          description: "A gentle, moisturizing soap infused with nourishing aloe vera and milk for a refreshing cleanse.",
+          benefit: "Hydrates and softens skin, leaving it smooth and supple. Soothes irritation and promotes skin healing. Ideal for all skin types, providing a natural glow.",
+        },
+        PC1302: {
+          name: "ஆலோ நோவா லெமன் கிராஸ் சோப் | ALOENOVA (Lemon Grass Soap) 100gm",
+          category: "PERSONAL CARE",
+          code: "PC1302",
+          mrp: 60.00,
+          discountPrice: 55.00,
+          businessValue: 11,
+          description: "A refreshing soap bar made with natural lemongrass extract, providing a rejuvenating cleanse for the skin to improves the skin tone.",
+          benefit: "Cleanses and purifies the skin. Offers antibacterial properties. Leaves a refreshing scent and revitalizes the senses.",
+        },
+        PC1303: {
+          name: "ரெட் ஆனியன் ஹேர் ஆயில் | RED ONION HAIR OIL 200ml",
+          category: "PERSONAL CARE",
+          code: "PC1303",
+          mrp: 210.00,
+          discountPrice: 250.00,
+          businessValue: 101_32,//THERE ARE TWO VALUE PV AND BP
+          description: "A nourishing conditioner designed to hydrate and detangle hair, leaving it soft, smooth, and manageable.",
+          benefit: "Moisturizes and softens hair, preventing dryness and frizz. Detangles hair, making it easier to comb and style. Strengthens hair strands, reducing breakage and split ends. Adds shine and luster to hair, enhancing its overall appearance.",
+        },
+        PC1304: {
+          name: "பாடி லோஷன் | BODY LOTION 200ml",
+          category: "PERSONAL CARE",
+          code: "PC1304",
+          mrp: 158.00,
+          discountPrice: 142.00,
+          businessValue: 0,
+          description: "A moisturizing lotion that soothes and hydrates the skin, leaving it smooth and soft.",
+          benefit: "Provides long-lasting hydration. Nourishes and softens the skin. Absorbs quickly without greasy residue.",
+        },
+        PC1305: {
+          name: "ஆன்டி டேண்ட்ரப் ஷாம்பூ | ANTI-DANDRUFF SHAMPOO 200ML",
+          category: "PERSONAL CARE",
+          code: "PC1305",
+          mrp: 195.00,
+          discountPrice: 170.00,
+          businessValue: 35,
+          description: "A specialized shampoo formulated to effectively combat dandruff while nourishing and soothing the scalp.",
+          benefit: "Eliminates dandruff and reduces scalp irritation for a healthier scalp. Contains active ingredients that help control flaking and itching. Promotes hair shine and softness, leaving hair looking vibrant. Suitable for all hair types, ensuring a gentle yet effective cleanse.",
+        },
+        PC1306: {
+          name: "சில்க் சைன் ஷாம்பூ | HERBAL SHAMPOO 200ml",
+          category: "PERSONAL CARE",
+          code: "PC1306",
+          mrp: 185.00,
+          discountPrice: 0.00,
+          businessValue: 0,
+          description: "A herbal shampoo that makes your hair soft and shiny.",
+          benefit: "Promotes smooth, shiny, and silky hair. Strengthens hair with natural herbal ingredients. Gently cleanses without stripping natural oils. Helps reduce frizz and adds softness.",
+        },
+        PC1307: {
+          name: "பாடி வாஷ் | BODY WASH 200ml",
+          category: "PERSONAL CARE",
+          code: "PC1307",
+          mrp: 175.00,
+          discountPrice: 160.00,
+          businessValue: 0,
+          description: "A gentle, refreshing body wash that hydrates and softens the skin.",
+          benefit: "Removes dirt, oil, and impurities without stripping the skin's natural moisture. Enriched with moisturizing ingredients to keep skin soft and smooth. Gentle enough for sensitive skin and daily use.",
+        },
+        
+        PC1309: {
+          name: "ஃபேஸ் வாஷ் கேக் | FACE WASH CAKE 30gml",
+          category: "PERSONAL CARE",
+          code: "PC1309",
+          mrp: 110.00,
+          discountPrice: 99.00,
+          businessValue: 0,
+          description: "A solid face wash in the form of a cake, designed to cleanse the skin deeply while being eco-friendly and convenient.",
+          benefit: "Gently cleanses the skin, removing dirt and excess oil. Compact and travel-friendly with minimal packaging. Enriched with moisturizing and soothing natural ingredients. Suitable for all skin types, leaving the skin soft and refreshed.",
+        },
+
+        //28 th product (towel) data missing
+      
+
+        // Health care Products Details
+        //(CT)
+        CT1201: {
+          name: "மொரிங்கோ கேப்சுயூல்ஸ் | MORINGO CAPSULES 60 tablets",
+          category: "HEALTH CARE",
+          code: "CT1201",
+          mrp: 975.00,
+          discountPrice: 781.00,
+          businessValue: 0,
+          description: " A natural dietary supplement designed to enhance your immune system and support overall health.",
+          benefit: "Strengthens immune response, helping to fend off common illnesses. Contains antioxidants and vitamins for optimal health support. Promotes overall wellness and vitality.",
+        },
+        //12 (JOINT PAIN RELIEVER) & 13 (STAMINA BOOSTER) data missing
+        CT1204: {
+          name: "முருங்கோ டீ | GR NATURE FRESH ORGANIC MORINGA TEA 50gm",
+          category: "HEALTH CARE",
+          code: "CT1204",
+          mrp: 325.00,
+          discountPrice: 285.00,
+          businessValue: 0,
+          description: "A refreshing and natural blend of premium organic tea leaves, offering a pure and wholesome tea experience with energy boost and digestive wellness.",
+          benefit: "Rich in antioxidants. Supports digestion and boosts immunity. Free from chemicals and additives.",
+        },
+};
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Function to fetch product data based on the ID in the URL
+        function loadProductDetails() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const productCode = urlParams.get('id'); // Assuming URL structure like product-details.html?id=HC1135
+
+          // Find product by code in the product data
+          const product = products[productCode];
+
+          if (product) {
+            // Update product details in the HTML
+            document.getElementById("product-name").innerText = product.name;
+            document.getElementById("product-category").innerText = product.category;
+            document.getElementById("product-code").innerText = product.code;
+            document.getElementById("product-mrp").innerText = product.mrp.toFixed(2);
+            document.getElementById("product-discount").innerText = product.discountPrice.toFixed(2);
+            document.getElementById("product-bv").innerText = product.businessValue;
+            document.getElementById("product-description").innerText = product.description;
+            document.getElementById("product-benefit").innerText = product.benefit;
+
+            // Assuming each product has a corresponding image file
+            const productImage = `assets/img/GRCS_Images/${product.code}.png`;
+            document.getElementById("product-image").src = productImage;
+            document.getElementById("product-image").alt = product.name;
+          } else {
+            // If no product found, display a default message
+            document.getElementById("product-name").innerText = "Product not found.";
+          }
+        }
+
+        // Call the function to load the product details
+        loadProductDetails();
+      });
+
+
+    </script>
+
+  </main>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
