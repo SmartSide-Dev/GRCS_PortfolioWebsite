@@ -807,8 +807,32 @@
       justify-content : center ;
       align-items : center ;
   }
+  .back-btn-container{
+    width : auto ;
+    height : 50px ;
+    display : flex ;
+    flex-direction : column ;
+    justify-content : center ;
+    align-items : center ;
+}
   .button:not(:last-child){
     margin-bottom : 64px ;
+  }
+  @media (max-width: 768px){
+    .back-btn-container{
+      width : 50% ;
+      height : 40px ;
+      display : flex ;
+      flex-direction : column ;
+      justify-content : center ;
+      align-items : center ;
+    }
+    .button{
+      width: 100px;
+    }
+    .header .logo h1{
+      font-size: 15px;
+    }
   }
   
   /*--------------------------------------------------------------
@@ -2278,10 +2302,10 @@
   }
   
   /*--------------------------------------------------------------
-  # Portfolio Section
+  # product Section
   --------------------------------------------------------------*/
- /* Sticky Portfolio Filters */
- .portfolio .portfolio-filters {
+ /* Sticky product Filters */
+ .product .product-filters {
   padding: 0;
   margin: 0 auto 60px auto;
   display: flex;
@@ -2296,7 +2320,7 @@
   box-shadow: 0px 3px 8px 2px rgb(0 0 0 / 22%); /* Optional: Add a subtle shadow */
 }
 
-.portfolio .portfolio-filters li {
+.product .product-filters li {
   width: 20%;
   padding: 10px 20px;
   font-size: 16px;
@@ -2313,16 +2337,16 @@
   display: inline-block;
 }
 
-.portfolio .portfolio-filters li + li {
+.product .product-filters li + li {
   border-left: 1px solid green; /* Line between filters */
 }
 
-.portfolio .portfolio-filters li:hover {
+.product .product-filters li:hover {
   background-color: #1987541c; /* Light blue hover */
   transition: all 0.3s ease-in-out; /* Smooth transition on hover */
 }
 
-.portfolio .portfolio-filters li.filter-active {
+.product .product-filters li.filter-active {
   background-color: green; /* Active filter background */
   color: white; /* Active filter text */
   transition: all 0.4s ease-in-out; /* Smooth transition for active state */
@@ -2330,13 +2354,13 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .portfolio .portfolio-filters {
+  .product .product-filters {
     display: block;
     top: 65px;
   }
   
 
-  .portfolio .portfolio-filters li {
+  .product .product-filters li {
     width: auto; /* Let the width be auto */
     flex: 1 1 45%; /* Allow two buttons per row */
     margin: 5px; /* Add some margin for spacing */
@@ -2345,7 +2369,7 @@
 }
 
 @media (max-width: 480px) {
-  .portfolio .portfolio-filters li {
+  .product .product-filters li {
     flex: 1 1 100%; /* Full width on small screens */
     margin: 5px 0; /* Vertical margin for better spacing */
   }
@@ -2353,25 +2377,25 @@
 
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .product .product-filters li {
     font-size: 14px;
     padding: 8px 15px;
   }
 }
 
 
-/* Ensure .portfolio-item scrolls behind the sticky filter */
-.portfolio .portfolio-item {
+/* Ensure .product-item scrolls behind the sticky filter */
+.product .product-item {
   position: relative;
   z-index: 1; /* Ensure it scrolls behind the sticky filters */
 }
 
   
-  .portfolio .portfolio-item {
+  .product .product-item {
     position: relative;
   }
   
-  .portfolio .portfolio-item .portfolio-info {
+  .product .product-item .product-info {
     opacity: 0;
     position: absolute;
     left: 30px;
@@ -2383,22 +2407,22 @@
     padding: 15px;
   }
   
-  .portfolio .portfolio-item .portfolio-info h4 {
+  .product .product-item .product-info h4 {
     font-size: 18px;
     font-weight: 600;
     padding-right: 50px;
   }
   
-  .portfolio .portfolio-item .portfolio-info p {
+  .product .product-item .product-info p {
     color: color-mix(in srgb, var(--default-color), transparent 30%);
     font-size: 14px;
     margin-bottom: 0;
     padding-right: 50px;
   }
   
-  .portfolio .portfolio-item .portfolio-info .preview-link,
-  .portfolio .portfolio-item .portfolio-info .details-link {
-    position: absolute;
+  .product .product-item .product-info .preview-link,
+  .product .product-item .product-info .details-link {
+    /* position: absolute; */
     right: 50px;
     font-size: 24px;
     top: calc(50% - 14px);
@@ -2407,51 +2431,54 @@
     line-height: 0;
   }
   
-  .portfolio .portfolio-item .portfolio-info .preview-link:hover,
-  .portfolio .portfolio-item .portfolio-info .details-link:hover {
+  .product .product-item .product-info .preview-link:hover,
+  .product .product-item .product-info .details-link:hover {
     color: var(--accent-color);
   }
   
-  .portfolio .portfolio-item .portfolio-info .details-link {
+  .product .product-item .product-info .details-link {
     right: 14px;
     font-size: 28px;
   }
   
-  .portfolio .portfolio-item:hover .portfolio-info {
+  .product .product-item:hover .product-info {
     opacity: 1;
     bottom: 20px;
   }
   
   /*--------------------------------------------------------------
-  # Portfolio Details Section
+  # product Details Section
   --------------------------------------------------------------*/
-  .portfolio-details .portfolio-details-slider img {
+  .product-details {
+    margin-top: 60px;
+  }
+  .product-details .product-details-slider img {
     width: 100%;
   }
   
-  .portfolio-details .portfolio-details-slider .swiper-pagination {
+  .product-details .product-details-slider .swiper-pagination {
     margin-top: 20px;
     position: relative;
   }
   
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  .product-details .product-details-slider .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
     background-color: color-mix(in srgb, var(--default-color), transparent 85%);
     opacity: 1;
   }
   
-  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  .product-details .product-details-slider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--accent-color);
   }
   
-  .portfolio-details .portfolio-info {
+  .product-details .product-info {
     background-color: var(--surface-color);
     padding: 30px;
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   }
   
-  .portfolio-details .portfolio-info h3 {
+  .product-details .product-info h3 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -2459,27 +2486,27 @@
     border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   }
   
-  .portfolio-details .portfolio-info ul {
+  .product-details .product-info ul {
     list-style: none;
     padding: 0;
     font-size: 15px;
   }
   
-  .portfolio-details .portfolio-info ul li+li {
+  .product-details .product-info ul li+li {
     margin-top: 10px;
   }
   
-  .portfolio-details .portfolio-description {
+  .product-details .product-description {
     padding-top: 30px;
   }
   
-  .portfolio-details .portfolio-description h2 {
+  .product-details .product-description h2 {
     font-size: 26px;
     font-weight: 700;
     margin-bottom: 20px;
   }
   
-  .portfolio-details .portfolio-description p {
+  .product-details .product-description p {
     padding: 0;
     color: color-mix(in srgb, var(--default-color), transparent 30%);
   }
@@ -2693,13 +2720,16 @@
   .contact .php-email-form input[type=text],
   .contact .php-email-form input[type=email],
   .contact .php-email-form textarea {
+    max-height: 200px;
     font-size: 14px;
     padding: 10px 15px;
     box-shadow: none;
     border-radius: 0;
     color: var(--default-color);
     background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-    border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+    /* border-color: color-mix(in srgb, var(--default-color), transparent 80%); */
+    border: 2px solid #32B44A;
+
   }
   
   .contact .php-email-form input[type=text]:focus,
