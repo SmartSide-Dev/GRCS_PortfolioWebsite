@@ -1042,6 +1042,17 @@
   .social-icons a:hover .fa-linkedin {
     color: #0077b5;
   }
+
+  /* WhatsApp hover */
+.social-icons a:hover .fa-whatsapp {
+  color: #25D366;
+}
+
+/* Telegram hover */
+.social-icons a:hover .fa-telegram {
+  color: #0088cc;
+}
+
   
   /* .footer-menu {
     display: flex;
