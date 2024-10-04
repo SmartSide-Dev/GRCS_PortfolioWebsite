@@ -52,6 +52,16 @@
       color: #fff;
       text-align: center;
     }
+    @media (max-width: 768px) {
+        .header {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .coming-soon{
+          font-size: 2rem !important;
+        }
+      }
     .coming-soon {
       font-size: 3.5rem;
       font-weight: 600;
@@ -127,31 +137,29 @@
 <body>
 
 
-    <header id="header" class="header d-flex align-items-center fixed-top ">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-evenly gap-20">
-    
-          <!-- Back Button -->
-          <div class="back-btn-container">
-            <a href="index.html" class="button type--B">
-              <div class="button__line"></div>
-              <div class="button__line"></div>
-              <span class="button__text" style="color: white;"><i class="fas fa-arrow-left"></i> BACK</span>
-              <div class="button__drow1"></div>
-              <div class="button__drow2"></div>
-            </a>
-          </div>
-    
-          <!-- Logo -->
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logos/logo.png" alt="">
-            <h1 class="sitename">GEEARR CONSUMER SOLUTIONS</h1>
-          </a>
-        </div>
+  <header id="header" class="header d-flex align-items-center fixed-top ">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-evenly" style="gap:30px">
 
-    
-    
-      </header>
-  
+      <!-- Back Button -->
+      <div class="back-btn-container">
+        <a href="products.html" class="back-button type--B">
+          <div class="back-button__line"></div>
+          <div class="back-button__line"></div>
+          <span class="back-button__text" style="color: white;"><i class="fas fa-arrow-left"></i> HOME</span>
+          <div class="back-button__drow1"></div>
+          <div class="back-button__drow2"></div>
+        </a>
+      </div>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logos/logo.png" alt="">
+        <h1 class="sitename">GEEARR CONSUMER SOLUTIONS</h1>
+      </a>
+    </div>
+
+   
+  </header>
         <div class="coming-soon">
           <!-- Each letter is wrapped in a span to apply animation -->
           <span>C</span><span>o</span><span>m</span><span>i</span><span>n</span><span>g</span>&nbsp;
