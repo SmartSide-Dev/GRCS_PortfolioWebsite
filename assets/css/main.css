@@ -2922,6 +2922,16 @@
     margin-bottom: 0;
     font-size: 14px;
   }
+  .contact .info-item p a {
+    color: black; /* Default text color */
+    text-decoration: none; /* Removes the underline from the link */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .contact .info-item p a:hover {
+    color: #32B44A; /* Green color on hover */
+  }
+  
   
   .contact .php-email-form {
     height: 100%;
