@@ -1472,7 +1472,7 @@
 .slider-dots {
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 72%;
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
@@ -1501,6 +1501,8 @@
   }
     .slider-dots {
         bottom: 15px;
+        left: 50%;
+        z-index: 3;
     }
 
     .slider-dots .dot {
