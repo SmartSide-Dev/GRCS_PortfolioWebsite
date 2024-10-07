@@ -1224,6 +1224,20 @@
       justify-content: center;
     }
   }
+
+  .footer .pdf{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px
+  }
+  @media (max-width: 768px) {
+    .footer .pdf{
+      gap: 10px;
+    }
+  }
   
   /*--------------------------------------------------------------
   # Preloader
