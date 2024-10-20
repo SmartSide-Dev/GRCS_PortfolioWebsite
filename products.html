@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Product Page -->
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -8,11 +9,11 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  
-    <!-- My Imports -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- My Imports -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- Favicons -->
   <link href="assets/img/logos/logo.png" rel="icon">
@@ -21,7 +22,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,66 +40,69 @@
 <body class="product-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between gap-20">
+    <div
+      class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between gap-20">
 
-        <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="assets/img/logos/logo.png" alt="">
-        </a>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logos/logo.png" alt="">
+      </a>
 
-        <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">HOME<br></a></li>
+          <li><a href="about.html">ABOUT</a></li>
+
+          <!-- Dropdown Menu Example -->
+          <li class="dropdown">
+            <a href="products.html"><span>PRODUCTS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-                <li><a href="index.html">HOME<br></a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                
-                <!-- Dropdown Menu Example -->
-                <li class="dropdown">
-                  <a href="products.html"><span>PRODUCTS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                      <li><a href="products.html?filter=*">ALL</a></li>
-                      <li><a href="products.html?filter=.filter-health-care">HEALTH CARE</a></li>
-                      <li><a href="products.html?filter=.filter-personal-care">PERSONAL CARE</a></li>
-                      <li><a href="products.html?filter=.filter-home-care">HOME CARE</a></li>
-                  </ul>
-                </li>
-                <!-- <li><a href="opportunity.html">OPPORTUNITY</a></li> -->
-                <!-- <li><a href="product.html">product</a></li>
+              <li><a href="products.html?filter=*">ALL</a></li>
+              <li><a href="products.html?filter=.filter-health-care">HEALTH CARE</a></li>
+              <li><a href="products.html?filter=.filter-personal-care">PERSONAL CARE</a></li>
+              <li><a href="products.html?filter=.filter-home-care">HOME CARE</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="opportunity.html">OPPORTUNITY</a></li> -->
+          <!-- <li><a href="product.html">product</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="blog.html">Blog</a></li> -->
-                <li><a href="contact.html">CONTACT</a></li>
-                <li>
-                    <!-- <div class="buttons">
+          <li><a href="contact.html">CONTACT</a></li>
+          <li>
+            <!-- <div class="buttons">
                         <button>Register</button>
                         <button>Login</button>
                       </div> -->
-                      <!-- <button style="--clr:#39FF14" class="button"><span>Login</span><i></i></button> -->
-                      <div class="btn-container">
-                      <a href="coming-soon.html" class="button type--B">
-                        <div class="button__line"></div>
-                        <div class="button__line"></div>
-                        <span class="button__text">LOGIN</span>
-                        <div class="button__drow1"></div>
-                        <div class="button__drow2"></div>
-                      </a></div>
+            <!-- <button style="--clr:#39FF14" class="button"><span>Login</span><i></i></button> -->
+            <div class="btn-container">
+              <a href="coming-soon.html" class="button type--B">
+                <div class="button__line"></div>
+                <div class="button__line"></div>
+                <span class="button__text">LOGIN</span>
+                <div class="button__drow1"></div>
+                <div class="button__drow2"></div>
+              </a>
+            </div>
 
-                    </li>
-            </ul>
-            
-            
-              <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-    
-          
-        </nav>
-        
-         <!-- Login Button -->
-   
+          </li>
+        </ul>
+
+
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
+
+      </nav>
+
+      <!-- Login Button -->
+
     </div>
-</header>
+  </header>
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/Product/banner.jpg);">
+    <div class="page-title dark-background" data-aos="fade"
+      style="background-image: url(assets/img/Product/banner.jpg);">
       <div class="container">
         <h1>OUR PRODUCTS</h1>
         <nav class="breadcrumbs">
@@ -122,525 +128,50 @@
               <p style="font-size: medium; padding: 0; margin: 0;">*Click / Hover the image to view more details.</p>
             </div>
           </ul>
-        
-
-     
-          
-          
     
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-
-            <!-- <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-              <img src="assets/img/GRCS_Images/HC1101.png" class="img-fluid" alt="Personal Care 1">
-              <div class="product-info">
-                  <h4>Personal Care 1</h4>
-                  <p>Description for personal care product 1.</p>
-                  <a href="assets/img/GRCS_Images/HC1101.png" title="Personal Care 1" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="product-details.html?id=HC1101" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>              </div>
+          <div class="coming-soon-container">
+            <h1 class="coming-soon-text">Coming Soon...</h1>
           </div>
-          
-          <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-              <img src="assets/img/GRCS_Images/2.png" class="img-fluid" alt="Personal Care 2">
-              <div class="product-info">
-                  <h4>Personal Care 2</h4>
-                  <p>Description for personal care product 2.</p>
-                  <a href="assets/img/GRCS_Images/2.png" title="Personal Care 2" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="product-details.html?id=2" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-          </div> -->
-            <!-- product Item: Personal Care, Health Care , Home Care -->
-             <!-- 1 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1307.png" class="img-fluid" alt="Personal Care 1" loading="lazy">
-                <div class="product-info">
-                  <h4>பாடி வாஷ் | BODY WASH 200ml</h4>
-                  <p>A gentle, refreshing body wash that hydrates and softens the skin.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1307.png" title="பாடி வாஷ் | BODY WASH 200ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A gentle, refreshing body wash that hydrates and softens the skin.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1307" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 2 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1306.png" class="img-fluid" alt="Personal Care 2" loading="lazy">
-                <div class="product-info">
-                  <h4>சில்க் சைன் ஷாம்பூ | HERBAL SHAMPOO 200ml</h4>
-                  <p>A herbal shampoo that makes your hair soft and shiny.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1306.png" title="சில்க் சைன் ஷாம்பூ | HERBAL SHAMPOO 200ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A herbal shampoo that makes your hair soft and shiny.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1306" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 3 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1101.png" class="img-fluid" alt="Home Care 1" loading="lazy">
-                <div class="product-info">
-                  <h4>பேப்ரிக் லிக்யூட் சோப் ஆயில் | FABRICARE LIQUID DETERGENT 500ml</h4>
-                  <p>A detergent that keeps your cloths clean and fresh.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1101.png" title="பேப்ரிக் லிக்யூட் சோப் ஆயில் | FABRICARE LIQUID DETERGENT 500ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A detergent that keeps your cloths clean and fresh.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1101" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1304.png" class="img-fluid" alt="Personal Care 3" loading="lazy">
-                <div class="product-info">
-                  <h4>பாடி லோஷன் | BODY LOTION 200ml</h4>
-                  <p>A moisturizing lotion that soothes and hydrates the skin, leaving it smooth and soft.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1304.png" title="பாடி லோஷன் | BODY LOTION 200ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A moisturizing lotion that soothes and hydrates the skin, leaving it smooth and soft.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1304" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 5 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1102.png" class="img-fluid" alt="Home Care 2" loading="lazy">
-                <div class="product-info">
-                  <h4>ஜி ஆர் சூப்பர் க்ளோவ் டிஷ் வாஷ் | GR SUPER GLOW DISH WASH 500ml</h4>
-                  <p>A powerful and effective cleaning solution designed to cut through tough grease and grime, leaving dishes sparkling clean with minimal effort.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1102.png" title="ஜி ஆர் சூப்பர் க்ளோவ் டிஷ் வாஷ் | GR SUPER GLOW DISH WASH 500ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A powerful and effective cleaning solution designed to cut through tough grease and grime, leaving dishes sparkling clean with minimal effort.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1102" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 6 -->  
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-health-care">
-                <img src="assets/img/GRCS_Images/CT1204.png" class="img-fluid" alt="Health Care 1" loading="lazy">
-                <div class="product-info">
-                  <h4>முருங்கோ டீ | GR NATURE FRESH ORGANIC MORINGA TEA 50gm</h4>
-                  <p>A refreshing and natural blend of premium organic tea leaves, offering a pure and wholesome tea experience with energy boost and digestive wellness.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/CT1204.png" title="முருங்கோ டீ | GR NATURE FRESH ORGANIC MORINGA TEA 50gm" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A refreshing and natural blend of premium organic tea leaves, offering a pure and wholesome tea experience with energy boost and digestive wellness.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=CT1204" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 7 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1303.png" class="img-fluid" alt="Personal Care 4" loading="lazy">
-                <div class="product-info">
-                  <h4>ரெட் ஆனியன் ஹேர் ஆயில் | RED ONION HAIR OIL 200ml</h4>
-                  <p>A nourishing hair oil infused with red onion extract, promoting healthy hair growth and strengthening hair from root to tip.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1303.png" title="ரெட் ஆனியன் ஹேர் ஆயில் | RED ONION HAIR OIL 200ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A nourishing hair oil infused with red onion extract, promoting healthy hair growth and strengthening hair from root to tip.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1303" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 8 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1302.png" class="img-fluid" alt="Personal Care 5" loading="lazy">
-                <div class="product-info">
-                  <h4>ஆலோ நோவா லெமன் கிராஸ் சோப் | ALOENOVA (Lemon Grass Soap) 100gm</h4>
-                  <p>A refreshing soap bar made with natural lemongrass extract, providing a rejuvenating cleanse for the skin to improves the skin tone.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1302.png" title="ஆலோ நோவா லெமன் கிராஸ் சோப் | ALOENOVA ( Lemon Grass Soap ) 100gm" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A refreshing soap bar made with natural lemongrass extract, providing a rejuvenating cleanse for the skin to improves the skin tone.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1302" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 9 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/CE1501.png" class="img-fluid" alt="Home Care 3" loading="lazy">
-                <div class="product-info">
-                  <h4>மல்டி பர்ப்பஸ் ஸ்டைன் ரிமூவர்  | MULTI-PURPOSE STAIN REMOVER 240ml</h4>
-                  <p>A powerful, versatile stain remover designed to tackle a wide range of tough stains and germs on various surfaces.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/CE1501.png" title="மல்டி பர்ப்பஸ் ஸ்டைன் ரிமூவர் | MULTI-PURPOSE STAIN REMOVER 240ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A powerful, versatile stain remover designed to tackle a wide range of tough stains and germs on various surfaces.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=CE1501" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 10  -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1103.png" class="img-fluid" alt="Home Care 4" loading="lazy">
-                <div class="product-info">
-                  <h4>ஜி ஆர் ஃலோரெக்ஸ் ஃலோர் கிளீனர் | GR FLOREX FLOOR CLEANER 500ml</h4>
-                  <p>A versatile and powerful solution, this floor cleaner is formulated to clean and sanitize a variety of floor surfaces, leaving them spotless and streak-free.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1103.png" title="ஜி ஆர் ஃலோரெக்ஸ் ஃலோர் கிளீனர் | GR FLOREX FLOOR CLEANER 500ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A versatile and powerful solution, this floor cleaner is formulated to clean and sanitize a variety of floor surfaces, leaving them spotless and streak-free.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1103" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 11 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1104.png" class="img-fluid" alt="Home Care 5" loading="lazy">
-                <div class="product-info">
-                  <h4>டாய்லெட் கிளீனர் | GR SANITONE TOILET CLEANER 500ml</h4>
-                  <p> A powerful toilet cleaner formulated to eliminate stains, odors, and germs, leaving your toilet sparkling clean.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1104.png" title="டாய்லெட் கிளீனர் | GR SANITONE TOILET CLEANER 500ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p> A powerful toilet cleaner formulated to eliminate stains, odors, and germs, leaving your toilet sparkling clean.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1104" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 12 pending data-->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-health-care">
-                <img src="assets/img/GRCS_Images/12.png" class="img-fluid" alt="Health Care 2" loading="lazy">
-                <div class="product-info">
-                  <h4>-</h4>
-                  <p>---</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/12.png" title="-" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>---</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=12" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 13 pending data-->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-health-care">
-                <img src="assets/img/GRCS_Images/13.png" class="img-fluid" alt="Health Care 3" loading="lazy">
-                <div class="product-info">
-                  <h4>-</h4>
-                  <p>---</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/13.png" title="-" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>---</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=13" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 14 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-health-care">
-                <img src="assets/img/GRCS_Images/CT1201.png" class="img-fluid" alt="Health Care 4" loading="lazy">
-                <div class="product-info">
-                  <h4>மொரிங்கோ கேப்சுயூல்ஸ் | MORINGO CAPSULES 60 tablets</h4>
-                  <p> A natural dietary supplement designed to enhance your immune system and support overall health.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/CT1201.png" title="மொரிங்கோ கேப்சுயூல்ஸ் | MORINGO CAPSULES 60 tablets" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p> A natural dietary supplement designed to enhance your immune system and support overall health.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=CT1201" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 15 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1301.png" class="img-fluid" alt="Personal Care 6" loading="lazy">
-                <div class="product-info">
-                  <h4>ஆலோ நோவா மில்க் சோப் | ALOENOVA (Aloevera Milk Soap) 80gm</h4>
-                  <p>A gentle, moisturizing soap infused with nourishing aloe vera and milk for a refreshing cleanse.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1301.png" title="ஆலோ நோவா மில்க் சோப் | ALOENOVA (Aloevera Milk Soap) 80gm" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A gentle, moisturizing soap infused with nourishing aloe vera and milk for a refreshing cleanse.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1301" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 16 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1108.png" class="img-fluid" alt="Home Care 6" loading="lazy">                
-                <div class="product-info">
-                  <h4>மல்டி பர்ப்பஸ் கிளீனிங் ஸ்க்ரப்பர் | MULTI-PURPOSE CLEANING SCRUBBER 1pc</h4>
-                  <p>A versatile cleaning scrubber designed to tackle tough grime and stains on various surfaces, ensuring a deep clean with minimal effort.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1108.png" title="மல்டி பர்ப்பஸ் கிளீனிங் ஸ்க்ரப்பர் | MULTI-PURPOSE CLEANING SCRUBBER 1pc" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A versatile cleaning scrubber designed to tackle tough grime and stains on various surfaces, ensuring a deep clean with minimal effort.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1108" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 17 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1106.png" class="img-fluid" alt="Home Care 7" loading="lazy">
-                <div class="product-info">
-                  <h4>கிட்சன் கிளீனர் ஸ்க்ரப் | KITCHEN SCRUB 3pcs (with SS Thread)</h4>
-                  <p>A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1106.png" title="கிட்சன் கிளீனர் ஸ்க்ரப் | KITCHEN SCRUB 3pcs (with SS Thread)" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1106" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 18 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/CE1502.png" class="img-fluid" alt="Home Care 8" loading="lazy">
-                <div class="product-info">
-                  <h4>பாத்ரூம் டைல்ஸ் கிளீனர் | BATHROOM TILES CLEANER 500ml</h4>
-                  <p>A powerful and effective cleaner specifically formulated to tackle tough stains, soap scum, and mildew on bathroom tiles, leaving surfaces sparkling clean.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/CE1502.png" title="பாத்ரூம் டைல்ஸ் கிளீனர் | BATHROOM TILES CLEANER 500ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p> powerful and effective cleaner specifically formulated to tackle tough stains, soap scum, and mildew on bathroom tiles, leaving surfaces sparkling clean.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=CE1502" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 19 -->      
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/HC1105.png" class="img-fluid" alt="Home Care 9" loading="lazy">
-                <div class="product-info">
-                  <h4>ஜி ஆர் ஃபேப்ரிக் ஆஃப்டர் வாஷ் |GR FABRICOOL AFTER WASH 250ml</h4>
-                  <p>A premium fabric conditioner designed to soften and refresh your laundry, leaving fabrics feeling luxurious and easy to care for.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/HC1105.png" title="ஜி ஆர் ஃபேப்ரிக் ஆஃப்டர் வாஷ் |GR FABRICOOL AFTER WASH 250ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A premium fabric conditioner designed to soften and refresh your laundry, leaving fabrics feeling luxurious and easy to care for.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=HC1105" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 20 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1305.png" class="img-fluid" alt="Personal Care 7" loading="lazy">
-                <div class="product-info">
-                  <h4>ஆன்டி டேண்ட்ரப் ஷாம்பூ | ANTI-DANDRUFF SHAMPOO 200ML</h4>
-                  <p>A specialized shampoo formulated to effectively combat dandruff while nourishing and soothing the scalp.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1305.png" title="ஆன்டி டேண்ட்ரப் ஷாம்பூ | ANTI-DANDRUFF SHAMPOO 200ML" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A specialized shampoo formulated to effectively combat dandruff while nourishing and soothing the scalp.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1305" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 21 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/PC1309.png" class="img-fluid" alt="Personal Care 8" loading="lazy">
-                <div class="product-info">
-                  <h4>ஃபேஸ் வாஷ் கேக் | FACE WASH CAKE 30gml</h4>
-                  <p>A solid face wash in the form of a cake, designed to cleanse the skin deeply while being eco-friendly and convenient.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/PC1309.png" title="ஆன்டி டேண்ட்ரப் ஷாம்பூ | ANTI-DANDRUFF SHAMPOO 200ML" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A solid face wash in the form of a cake, designed to cleanse the skin deeply while being eco-friendly and convenient.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=PC1309" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 22 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1406.png" class="img-fluid" alt="Home Care 10" loading="lazy">
-                <div class="product-info">
-                  <h4>ஜி கோட் விண்ட் ஷீல்டு ப்ரொடக்டர் | G.COAT WINDSHIELD PROTECTOR 50ml</h4>
-                  <p>A protective solution designed to safeguard windshields from damage and dirt while improving aerodynamics, ensuring clear visibility and smoother driving.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1406.png" title="ஜி கோட் விண்ட் ஷீல்டு ப்ரொடக்டர் | G.COAT WINDSHIELD PROTECTOR 50ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A protective solution designed to safeguard windshields from damage and dirt while improving aerodynamics, ensuring clear visibility and smoother driving.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1406 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 23 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1403.png" class="img-fluid" alt="Home Care 11" loading="lazy">
-                <div class="product-info">
-                  <h4>கார் ஸ்கிரீன் வாஷ் | CAR SCREEN WASH 250ml</h4>
-                  <p>A powerful cleaning solution designed to keep your car's windshield clear and spotless, ensuring optimal visibility during every drive.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1403.png" title="கார் ஸ்கிரீன் வாஷ் | CAR SCREEN WASH 250ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A powerful cleaning solution designed to keep your car's windshield clear and spotless, ensuring optimal visibility during every drive.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1403 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 24 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1402.png" class="img-fluid" alt="Home Care 12" loading="lazy">
-                <div class="product-info">
-                  <h4>கார் டயர் அல்ட்ரா பிளாக் ஷைனர் | CAR TYER ULTRA BLACK SHINER 250ML</h4>
-                  <p>A premium formula that gives your car tires a deep, long-lasting black shine, enhancing the overall appearance of your vehicle.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1402.png" title="கார் டயர் அல்ட்ரா பிளாக் ஷைனர் | CAR TYER ULTRA BLACK SHINER 250ML" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A premium formula that gives your car tires a deep, long-lasting black shine, enhancing the overall appearance of your vehicle.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1402 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 25 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1405.png" class="img-fluid" alt="Home Care 13" loading="lazy">
-                <div class="product-info">
-                  <h4>கார் பாடி வாஷ் ஷாம்பூ கேர் | CAR BODY WASH SHAMPOO CARE 250ml</h4>
-                  <p>A high-quality shampoo formulated with ultra foam technology to provide a deep clean while enhancing your vehicle's shine.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1405.png" title="கார் பாடி வாஷ் ஷாம்பூ கேர் | CAR BODY WASH SHAMPOO CARE 250ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A high-quality shampoo formulated with ultra foam technology to provide a deep clean while enhancing your vehicle's shine.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1405 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 26 --> 
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1401.png" class="img-fluid" alt="Home Care 13" loading="lazy">
-                <div class="product-info">
-                  <h4>கார் பிளாஸ்டிக் ரீஸ்டோரர் | CAR PLASTIC RESTORER 250ml</h4>
-                  <p> A premium formula designed to rejuvenate and restore faded and weathered plastic surfaces in your vehicle.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1401.png" title="கார் பிளாஸ்டிக் ரீஸ்டோரர் | CAR PLASTIC RESTORER 250ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p> A premium formula designed to rejuvenate and restore faded and weathered plastic surfaces in your vehicle.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1401 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- 27 -->
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-home-care">
-                <img src="assets/img/GRCS_Images/AC1404.png" class="img-fluid" alt="Home Care 14" loading="lazy">
-                <div class="product-info">
-                  <h4>கார் டேஷ்போர்டு & இன்டீரியர் பாலிஷ் | CAR DASHBOARD & INTERIOR POLISH 250ml</h4>
-                  <p>A specialized polish formulated to clean, protect, and enhance the appearance of your vehicle's dashboard and interior surfaces.</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/AC1404.png" title="கார் டேஷ்போர்டு & இன்டீரியர் பாலிஷ் | CAR DASHBOARD & INTERIOR POLISH 250ml" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>A specialized polish formulated to clean, protect, and enhance the appearance of your vehicle's dashboard and interior surfaces.</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=AC1404 " title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 product-item isotope-item filter-personal-care">
-                <img src="assets/img/GRCS_Images/28.png" class="img-fluid" alt="Personal Care 9" loading="lazy">
-                <div class="product-info">
-                  <h4>-</h4>
-                  <p>---</p><br>
-                  <div class="d-flex align-items-center" style="gap: 10px;">
-                    <p style="font-size: 12px;width: auto;padding-right: 0 !important;">Click icons for more details <i class="fas fa-arrow-right"></i> </p>
-                    <a href="assets/img/GRCS_Images/28.png" title="-" data-gallery="product-gallery-personal" class="glightbox preview-link"><i class="bi bi-zoom-in"></i>
-                      <div class="glightbox-desc custom-desc1">
-                        <p>---</p>
-                      </div>
-                    </a>
-                    <a href="product-details.html?id=28" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-              
-
-             
-
-            
-            
-            <!-- End product Item -->
     
-          </div><!-- End product Container -->
         </div>
       </div>
     </section>
+  <style>
+    .coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust height as needed */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+}
+
+.coming-soon-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  animation: pulse 2s infinite;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+  </style>    
     <!-- /product Section -->
 
   </main>
@@ -648,48 +179,59 @@
   <footer id="footer" class="footer light-background">
 
     <div class="footer-top">
-        <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-12 col-md-12 footer-about">
-                  <div class="col-md-12 col-sm-12" style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-                    <img src="assets/img/logos/logo.png" alt="Logo" class="footer-logo">
-                    <h2 class="ms-3 hover-title" style="color: white;">
-                      <span class="geearr">GEEARR</span><br>
-                      <span class="consumer-solution">CONSUMER SOLUTION</span>
-                    </h2>
-                  </div>
-                    <p style="line-height: 30px;"><span style="font-size: 30px; color: #32B44A;  font-family: 'Playfair Display', serif;font-style: italic;">" </span> Empower your future with our GRCS opportunities. Join us to achieve success, life Prosperity, Achievement, growth, and financial freedom.<span style="font-size: 30px; color: #32B44A;  font-family: 'Playfair Display', serif;font-style: italic;">"</span></p>
-                    <div class="footer-address">
-                      <h4>Contact Us</h4>
-                      <p><strong>1/53, Keerthi Complex, 1st Floor Kuppichipalayam Road, Opp. Police Station,</strong></p>
-                      <p><strong>Periyanaickenpalayam, Coimbatore - 641 020.</strong></p>
-                      <p><strong>Phone: </strong><a href="tel:+91 89255 32450">+91 89255 32450</a></p>
-                      <p><strong>Email: </strong><a href="mailto:support@grcsolutions.in">support@grcsolutions.in</a>
-                      </p>
-                    </div>
-                        <div class="footer-social">
-                          <h4>Follow Us</h4>
-                          <div class="social-icons">
-                            <a href="https://youtube.com/@grcs-uj3qx" target="_blank" rel="noopener noreferrer" class="me-4 text-reset">
-                              <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61556452987695&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="me-4 text-reset">
-                              <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://www.instagram.com/gr_consumer_solution_pvt.ltd?igsh=c2ptejAzMm5kNDhp" target="_blank" rel="noopener noreferrer" class="me-4 text-reset">
-                              <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://whatsapp.com/channel/0029VaNpmy3LI8YUjclF2z43" target="_blank" rel="noopener noreferrer" class="me-4 text-reset">
-                              <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="https://t.me/+Yr2Y3eqYkgo1MTU1" target="_blank" rel="noopener noreferrer" class="me-4 text-reset">
-                              <i class="fab fa-telegram"></i>
-                            </a>
-                          </div>
-                        </div>
-                </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 col-md-12 footer-about">
+            <div class="col-md-12 col-sm-12"
+              style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+              <img src="assets/img/logos/logo.png" alt="Logo" class="footer-logo">
+              <h2 class="ms-3 hover-title" style="color: white;">
+                <span class="geearr">GEEARR</span><br>
+                <span class="consumer-solution">CONSUMER SOLUTION</span>
+              </h2>
+            </div>
+            <p style="line-height: 30px;"><span
+                style="font-size: 30px; color: #32B44A;  font-family: 'Playfair Display', serif;font-style: italic;">"
+              </span> Empower your future with our GRCS opportunities. Join us to achieve success, life Prosperity,
+              Achievement, growth, and financial freedom.<span
+                style="font-size: 30px; color: #32B44A;  font-family: 'Playfair Display', serif;font-style: italic;">"</span>
+            </p>
+            <div class="footer-address">
+              <h4>Contact Us</h4>
+              <p><strong>1/53, Keerthi Complex, 1st Floor Kuppichipalayam Road, Opp. Police Station,</strong></p>
+              <p><strong>Periyanaickenpalayam, Coimbatore - 641 020.</strong></p>
+              <p><strong>Phone: </strong><a href="tel:+91 89255 32450">+91 89255 32450</a></p>
+              <p><strong>Email: </strong><a href="mailto:support@grcsolutions.in">support@grcsolutions.in</a>
+              </p>
+            </div>
+            <div class="footer-social">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <a href="https://youtube.com/@grcs-uj3qx" target="_blank" rel="noopener noreferrer"
+                  class="me-4 text-reset">
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61556452987695&mibextid=ZbWKwL" target="_blank"
+                  rel="noopener noreferrer" class="me-4 text-reset">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/gr_consumer_solution_pvt.ltd?igsh=c2ptejAzMm5kNDhp" target="_blank"
+                  rel="noopener noreferrer" class="me-4 text-reset">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VaNpmy3LI8YUjclF2z43" target="_blank"
+                  rel="noopener noreferrer" class="me-4 text-reset">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://t.me/+Yr2Y3eqYkgo1MTU1" target="_blank" rel="noopener noreferrer"
+                  class="me-4 text-reset">
+                  <i class="fab fa-telegram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
 
-                 <!-- <div class="col-lg-4 col-6 footer-links">
+          <!-- <div class="col-lg-4 col-6 footer-links">
             <h4>Menus</h4>
             <ul>
               <li><i class="fas fa-chevron-right"></i><a href="#"> Home</a></li>
@@ -726,23 +268,24 @@
 
         </div> -->
         </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="pdf">
-        <a href="/assets/pdf/PRIVACY POLICY.pdf" target="_blank">Privacy Policy</a> |
-        <a href="/assets/pdf/Terms & Conditions.pdf" target="_blank">Terms & Conditions</a> |
-        <a href="/assets/pdf/SHIPPING POLICY.pdf" target="_blank">Shipping Policy</a> |
-        <a href="/assets/pdf/Cancellation Policy.pdf" target="_blank">Cancellation Policy</a>
       </div>
-      <p>© 2024 <strong><a href="/">GEEARR Consumer Solution</a></strong> | All Rights Reserved</p>
-      <p>Designed and Developed by <a href="https://www.smartside.in/">SmartSide</a> with ❤️</p>
-    </div>
 
-</footer>
+      <div class="footer-bottom">
+        <div class="pdf">
+          <a href="/assets/pdf/PRIVACY POLICY.pdf" target="_blank">Privacy Policy</a> |
+          <a href="/assets/pdf/Terms & Conditions.pdf" target="_blank">Terms & Conditions</a> |
+          <a href="/assets/pdf/SHIPPING POLICY.pdf" target="_blank">Shipping Policy</a> |
+          <a href="/assets/pdf/Cancellation Policy.pdf" target="_blank">Cancellation Policy</a>
+        </div>
+        <p>© 2024 <strong><a href="/">GEEARR Consumer Solution</a></strong> | All Rights Reserved</p>
+        <p>Designed and Developed by <a href="https://www.smartside.in/">SmartSide</a> with ❤️</p>
+      </div>
+
+  </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
