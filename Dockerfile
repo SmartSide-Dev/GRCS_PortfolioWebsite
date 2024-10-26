@@ -11,7 +11,7 @@ RUN rm -rf ./*
 COPY . .
 
 # Expose port 8000 (default for portfolio)
-EXPOSE 8000
+EXPOSE 80
 
 # Start Nginx when the container is launched
 CMD ["nginx", "-g", "daemon off;"]
