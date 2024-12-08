@@ -284,7 +284,7 @@ setInterval(nextSlide, 5000); // Change slide every 5 seconds
 
 window.onload = function() {
   AOS.init({
-    duration: 1200, // Time for the animation
+    duration: 500, // Time for the animation
     once: true, // The animation happens only once when scrolling
   });
 };
