@@ -10,8 +10,8 @@ RUN rm -rf ./*
 # Copy the current directory contents into the container at /usr/share/nginx/html
 COPY . .
 
-# Expose port 80 to the outside world
-EXPOSE 8000
+# Expose port 8000 (default for portfolio)
+EXPOSE 80
 
 # Start Nginx when the container is launched
 CMD ["nginx", "-g", "daemon off;"]
