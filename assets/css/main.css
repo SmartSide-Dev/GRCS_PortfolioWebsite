@@ -2647,11 +2647,11 @@
 
 .product-image-small {
   width: 70%;
-  height: auto;
   margin:0 auto;
   display: block;
   border-radius: 12px 12px 0 0;
   object-fit: contain;
+  max-height: 165px;
 }
 
 .product-info-small {
