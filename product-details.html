@@ -206,6 +206,8 @@
               <p id="product-description"></p>
               <h4>Benefit</h4>
               <p id="product-benefit"></p>
+              <h4>Usage Tips</h4>
+              <p id="product-usage-tips"></p>
             </div>
 
           </div>
@@ -616,6 +618,7 @@
             document.getElementById("product-bv").innerText = product.businessValue;
             document.getElementById("product-description").innerText = product.description;
             document.getElementById("product-benefit").innerText = product.benefit;
+            document.getElementById("product-usage-tips").innerText = product.usageTips;
 
             // Assuming each product has a corresponding image file
             const productImage = `assets/img/NewProducts/${product.code}.webp`;
