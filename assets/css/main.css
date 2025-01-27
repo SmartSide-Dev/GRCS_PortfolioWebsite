@@ -2563,7 +2563,7 @@
   text-align: right; /* Align text to the left */
 }
 .product .product-filters li {
-  width: 20%;
+  width: fit-content;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
@@ -2628,71 +2628,130 @@
 
 /* Ensure .product-item scrolls behind the sticky filter */
 .product .product-item {
-  position: relative;
   z-index: 1; /* Ensure it scrolls behind the sticky filters */
 }
+.product-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+}
 
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-small {
+  width: 70%;
+  height: auto;
+  margin:0 auto;
+  display: block;
+  border-radius: 12px 12px 0 0;
+  object-fit: contain;
+}
+
+.product-info-small {
+  padding: 15px;
+  text-align: center;
+  border-top: 2px solid #27A03D;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.product-title-small {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
+}
+
+.product-description-small {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+  height: 36px; /* Adjust based on content */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   
-  .product .product-item {
-    position: relative;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-text {
+  font-size: 12px;
+  color: #555;
+}
+
+.preview-link,
+.details-link {
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.preview-link:hover,
+.details-link:hover {
+  color: #007bff;
+}
+
+.details-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27A03D; /* Primary button color */
+  color: #fff; /* White text */
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+.details-button:hover {
+  background-color: #1C8930; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  color: white;
+}
+
+.details-button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reset shadow on click */
+}
+
+
+.product-card:hover .product-info {
+  background: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 20px;
   }
-  
-  .product .product-item .product-info {
-    opacity: 0;
-    position: absolute;
-    left: 30px;
-    right: 30px;
-    bottom: 0;
-    z-index: 3;
-    transition: all ease-in-out 0.3s;
-    background: color-mix(in srgb, var(--background-color), transparent 10%);
-    padding: 15px;
-  }
-  
-  .product .product-item .product-info h4 {
-    font-size: 18px;
-    font-weight: 600;
-    padding-right: 50px;
-  }
-  
-  .product .product-item .product-info p {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
-    font-size: 14px;
-    margin-bottom: 0;
-    padding-right: 50px;
-  }
-  
-  .product .product-item .product-info .preview-link,
-  .product .product-item .product-info .details-link {
-    /* position: absolute; */
-    right: 50px;
-    font-size: 24px;
-    top: calc(50% - 14px);
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
-    transition: 0.3s;
-    line-height: 0;
-  }
-  
-  .product .product-item .product-info .preview-link:hover,
-  .product .product-item .product-info .details-link:hover {
-    color: var(--accent-color);
-  }
-  
-  .product .product-item .product-info .details-link {
-    right: 14px;
-    font-size: 28px;
-  }
-  
-  .product .product-item:hover .product-info {
-    opacity: 1;
-    bottom: 20px;
-  }
-  
+}
+
   /*--------------------------------------------------------------
   # product Details Section
   --------------------------------------------------------------*/
   .product-details {
     margin-top: 60px;
+    display: flex;
   }
   .product-details .product-details-slider img {
     width: 100%;

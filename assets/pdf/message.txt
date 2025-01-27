@@ -1,0 +1,651 @@
+## Home care
+
+HN1001:{
+"name": "Fabricare Liquid Detergent 500ml",
+"category": "HOME CARE",
+"code": "HN1001",
+"mrp": 215.00,
+"discountPrice": 195.00,
+"businessValue": 47,
+"description": "An advanced liquid detergent that effectively removes stains while being gentle on fabrics, leaving clothes fresh and clean.",
+"benefit": "Deep cleanses clothes, retains fabric softness, and imparts a long-lasting fragrance. Suitable for both machine and hand washing, ensuring convenience and efficiency.",
+"usageTips": "Use as directed on the label for best results. For tough stains, pre-soak clothes in a diluted solution before washing."
+},
+HN1002:{
+"name": "GR Sanitone Toilet Cleaner 500ml",
+"category": "HOME CARE",
+"code": "HN1002",
+"mrp": 155.00,
+"discountPrice": 145.00,
+"businessValue": 35,
+"description": "A powerful toilet cleaner formulated to remove tough stains, kill germs, and leave toilets sparkling clean.",
+"benefit": "Effectively removes limescale and tough stains, eliminates odor-causing bacteria, and ensures hygienic freshness after every use.",
+"usageTips": "Apply around the bowl and under the rim, leave for 10 minutes, then scrub and flush for a spotless finish."
+}.
+
+HN1003:{
+"name": "GR Fabricool After Wash 250ml",
+"category": "HOME CARE",
+"code": "HN1003",
+"mrp": 146.00,
+"discountPrice": 126.00,
+"businessValue": 30,
+"description": "A premium after-wash fabric conditioner that adds softness and freshness to your clothes.",
+"benefit": "Reduces static cling, enhances fabric texture, and imparts a delightful fragrance. Helps maintain the vibrancy and longevity of fabrics.",
+"usageTips": "Add directly to the rinse cycle of your washing machine or dilute for hand-washing. Avoid pouring directly onto clothes."
+},
+
+HN1004:{
+"name": "Kitchen Scrub 3pcs (with SS Thread)",
+"category": "HOME CARE",
+"code": "HN1004",
+"mrp": 68.00,
+"discountPrice": 64.00,
+"businessValue": 15,
+"description": "A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.",
+"benefit": "Tough on grime but gentle on surfaces. Ergonomic design provides a comfortable grip. Versatile for cookware, countertops, and utensils.",
+"usageTips": "Rinse thoroughly before and after use. Use with dish soap for optimal results on greasy stains."
+},
+
+HN1005:{
+"name": "Multipurpose Cleaning Scrubber 1pc",
+"category": "HOME CARE",
+"code": "HN1005",
+"mrp": 135.00,
+"discountPrice": 90.00,
+"businessValue": 22,
+"description": "A versatile scrubber suitable for various cleaning tasks, ensuring spotless results on multiple surfaces.",
+"benefit": "Highly effective on tough stains and grime. Long-lasting and durable. Safe for use on a variety of surfaces, including tiles, countertops, and more.",
+"usageTips": "Use with an appropriate cleaning agent for stubborn stains. Replace periodically for maximum efficiency."
+}.
+
+HN1006:{
+"name": "Multi-Purpose Stain Remover 200ml",
+"category": "HOME CARE",
+"code": "HN1006",
+"mrp": 180.00,
+"discountPrice": 150.00,
+"businessValue": 37,
+"description": "A concentrated stain remover specially designed to tackle stubborn stains on clothes, upholstery, and more.",
+"benefit": "Quickly dissolves tough stains without damaging fabric or surface integrity. Easy-to-use formula suitable for various materials.",
+"usageTips": "Apply directly on the stain, wait for a few minutes, and then wash or wipe. Test on an inconspicuous area before use."
+},
+
+HN1007:{
+"name": "Bathroom Tile Cleaner 500ml",
+"category": "HOME CARE",
+"code": "HN1007",
+"mrp": 390.00,
+"discountPrice": 360.00,
+"businessValue": 86,
+"description": "A specialized cleaner for bathroom tiles that removes dirt, grime, and watermarks, leaving surfaces sparkling clean.",
+"benefit": "Effectively removes stubborn stains, soap scum, and hard water deposits. Leaves a fresh and hygienic finish.",
+"usageTips": "Spray directly onto tiles, scrub gently, and rinse with water. Wear gloves for prolonged use."
+},
+
+HN1008:{
+"name": "Dish Wash Plus (Green) 500ml",
+"category": "HOME CARE",
+"code": "HN1008",
+"mrp": 220.00,
+"discountPrice": 190.00,
+"businessValue": 48,
+"description": "A high-performance liquid dishwashing solution designed to cut through grease and tough food residues effectively.",
+"benefit": "Gentle on hands, tough on grease. Provides a rich lather, ensuring spotless dishes with minimal effort.",
+"usageTips": "Dilute a small amount in water for regular cleaning or use directly for tough grease."
+},
+HN1009:{
+"name": "Florex Plus Cleaner 500ml",
+"category": "HOME CARE",
+"code": "HN1009",
+"mrp": 165.00,
+"discountPrice": 154.00,
+"businessValue": 37,
+"description": "A versatile floor cleaner that disinfects and leaves a pleasant fragrance, ensuring a clean and germ-free environment.",
+"benefit": "Kills 99.9% of germs while effectively removing dirt and stains. Leaves a long-lasting fresh fragrance.",
+"usageTips": "Dilute in water as per instructions for mopping. Use undiluted on tough stains for better results."
+},
+
+HN1010:{
+"name": "Glass Cleaner 500ml",
+"category": "HOME CARE",
+"code": "HN1010",
+"mrp": 250.00,
+"discountPrice": 230.00,
+"businessValue": 55,
+"description": "A streak-free glass cleaner that ensures crystal-clear surfaces with minimal effort.",
+"benefit": "Removes smudges, fingerprints, and dust effectively. Leaves a streak-free shine and enhances visibility.",
+"usageTips": "Spray directly on glass surfaces and wipe with a clean, dry cloth for a sparkling finish."
+}
+
+## Health care
+
+HC001: {
+name: "மோரிங்கோ கேப்ஸூல் | MORINGO CAPSULES 60tablets",
+category: "HEALTH CARE",
+code: "HC001",
+mrp: 975.00,
+discountPrice: 780.00,
+businessValue: 187,
+description: "A powerful supplement enriched with the goodness of Moringa, packed with essential vitamins, minerals, and antioxidants.",
+benefit: "Boosts immunity, supports overall health, promotes energy levels, and helps improve digestive functions. Rich in antioxidants, it aids in detoxification and reduces inflammation.",
+usageTips: "Take one capsule daily with water, preferably after meals, for best results.",
+},
+
+HC002: {
+name: "சந்தி வலி நிவாரண கேப்ஸூல் | JOINT PAIN RELIEVER CAPSULE 30tablets",
+category: "HEALTH CARE",
+code: "HC002",
+mrp: 1,140.00,
+discountPrice: 950.00,
+businessValue: 227,
+description: "A specially formulated capsule to provide relief from joint pain and improve mobility.",
+benefit: "Helps reduce joint inflammation, strengthens cartilage, and improves flexibility for a more active lifestyle.",
+usageTips: "Consume one capsule twice a day with warm water after meals for effective relief from joint discomfort.",
+},
+
+HC003: {
+name: "ஸ்டாமினா பூஸ்டர் | GR NATURE CARE STAMINA BOOSTER 10tablets",
+category: "HEALTH CARE",
+code: "HC003",
+mrp: 1,190.00,
+discountPrice: 930.00,
+businessValue: 223,
+description: "An energy-enhancing supplement designed to boost stamina and endurance naturally.",
+benefit: "Improves energy levels, enhances physical performance, and reduces fatigue. Supports overall vitality and well-being.",
+usageTips: "Take one tablet daily with milk or water before workouts or during times of high physical activity.",
+},
+
+HC004: {
+name: "ஆர்கானிக் மொரிங்கா டீ | GR NATURE FRESH ORGANIC MORINGA TEA 100gm",
+category: "HEALTH CARE",
+code: "HC004",
+mrp: 399.00,
+discountPrice: 370.00,
+businessValue: 89,
+description: "A refreshing and nutrient-rich organic Moringa tea to rejuvenate your body and mind.",
+benefit: "Boosts metabolism, supports weight management, and provides essential antioxidants. Promotes relaxation and enhances digestion.",
+usageTips: "Steep one teaspoon of tea in hot water for 3-5 minutes. Consume twice daily for maximum benefits.",
+},
+
+HC005: {
+name: "வலி நிவாரண எண்ணெய் | GR Pain Relief Oil",
+category: "HEALTH CARE",
+code: "HC005",
+mrp: 180.00,
+discountPrice: 150.00,
+businessValue: 37,
+description: "An effective herbal pain relief oil to alleviate aches and soreness in muscles and joints.",
+benefit: "Provides quick relief from pain, reduces inflammation, and enhances blood circulation in the affected areas.",
+usageTips: "Massage gently onto the affected area 2-3 times a day for immediate and long-lasting relief.",
+},
+
+## Personal care
+
+PC001: {
+name: "Natural Aloe Vera Gel 60gm",
+category: "Personal CARE",
+code: "PC001",
+mrp: 99.00,
+discountPrice: 99.00,
+businessValue: 24,
+description: "A soothing and hydrating aloe vera gel enriched with natural extracts to nourish and rejuvenate your skin.",
+benefit: "Deeply moisturizes skin, soothes irritation, and promotes a healthy glow. Ideal for reducing sunburn, dryness, and minor cuts.",
+usageTips: "Apply a small amount directly to the skin or hair as needed. Use twice daily for optimal hydration and repair.",
+},
+
+PC002: {
+name: "ALOENOVA (Aloevera MILK SOAP) 80gm",
+category: "Personal CARE",
+code: "PC002",
+mrp: 60.00,
+discountPrice: 55.00,
+businessValue: 13,
+description: "A luxurious soap infused with aloe vera and milk to cleanse and nourish your skin naturally.",
+benefit: "Gently cleanses while retaining skin moisture. Promotes softer, smoother, and radiant skin with daily use.",
+usageTips: "Use during your daily bath or shower. Lather and rinse thoroughly for a refreshing feel.",
+},
+
+PC003: {
+name: "ALOENOVA (Lemon Grass Soap) 100gm",
+category: "Personal CARE",
+code: "PC003",
+mrp: 60.00,
+discountPrice: 55.00,
+businessValue: 13,
+description: "An invigorating soap made with lemongrass extracts to refresh and purify your skin.",
+benefit: "Cleanses deeply, revitalizes the senses, and leaves skin soft and hydrated. Ideal for oily or acne-prone skin.",
+usageTips: "Lather onto wet skin and rinse thoroughly. Use daily for a refreshing and rejuvenating experience.",
+},
+
+PC004: {
+name: "GEEAAR RED ONION HAIR OIL 200ml",
+category: "Personal CARE",
+code: "PC004",
+mrp: 210.00,
+discountPrice: 175.00,
+businessValue: 41,
+description: "A nutrient-rich hair oil with red onion extracts to strengthen hair and promote healthy growth.",
+benefit: "Reduces hair fall, strengthens roots, and promotes shiny, thicker hair. Helps combat dandruff and scalp dryness.",
+usageTips: "Massage gently onto the scalp and hair. Leave for 1-2 hours or overnight before washing off.",
+},
+
+PC005: {
+name: "GEEAAR BODY LOTION 200ML",
+category: "Personal CARE",
+code: "PC005",
+mrp: 152.00,
+discountPrice: 142.00,
+businessValue: 34,
+description: "A nourishing body lotion formulated to provide long-lasting hydration and softness to your skin.",
+benefit: "Moisturizes deeply, improves skin texture, and provides a protective barrier against dryness and irritation.",
+usageTips: "Apply generously all over the body after a shower or whenever your skin feels dry.",
+},
+
+PC006: {
+name: "GEEAAR ANTI-DANDRUFF SHAMPOO 200ml",
+category: "Personal CARE",
+code: "PC006",
+mrp: 195.00,
+discountPrice: 170.00,
+businessValue: 41,
+description: "An effective anti-dandruff shampoo designed to cleanse and nourish your scalp while eliminating dandruff.",
+benefit: "Reduces dandruff, soothes scalp irritation, and leaves hair soft and manageable. Promotes a healthy scalp environment.",
+usageTips: "Apply to wet hair, lather well, and rinse thoroughly. Use 2-3 times a week for best results.",
+},
+
+PC007: {
+name: "GEEAAR HERBAL SHAMPOO 200ml",
+category: "Personal CARE",
+code: "PC007",
+mrp: 185.00,
+discountPrice: 165.00,
+businessValue: 40,
+description: "A herbal shampoo enriched with natural ingredients to cleanse and nourish hair, leaving it soft and shiny.",
+benefit: "Strengthens hair follicles, adds shine, and reduces breakage. Suitable for all hair types.",
+usageTips: "Apply to damp hair, massage into a rich lather, and rinse thoroughly. Use regularly for best results.",
+},
+
+PC008: {
+name: "GEEAAR BODY WASH 200ml",
+category: "Personal CARE",
+code: "PC008",
+mrp: 175.00,
+discountPrice: 160.00,
+businessValue: 38,
+description: "A refreshing body wash infused with gentle cleansers and natural extracts to leave your skin soft and fragrant.",
+benefit: "Cleanses without stripping natural oils, leaving skin smooth and hydrated. Provides a refreshing and soothing experience.",
+usageTips: "Apply to a loofah or directly onto wet skin. Lather and rinse thoroughly for a clean, refreshing feel.",
+},
+
+PC009: {
+name: "FACE WASH CAKE 30gm",
+category: "Personal CARE",
+code: "PC009",
+mrp: 110.00,
+discountPrice: 99.00,
+businessValue: 24,
+description: "A compact face wash cake formulated to cleanse and refresh your skin, removing dirt and impurities.",
+benefit: "Gently cleanses pores, removes excess oil, and leaves skin feeling fresh and radiant. Ideal for travel use.",
+usageTips: "Rub onto wet hands to create a lather. Massage onto face and rinse thoroughly. Use twice daily.",
+},
+
+## Auto care
+
+AC001: {
+name: "PLASTIC RESTORER 200ml",
+category: "AUTO CARE",
+code: "AC001",
+mrp: 450.00,
+discountPrice: 405.00,
+businessValue: 97,
+description: "A premium plastic restorer that revives and protects dull and faded plastic surfaces on your vehicle, providing a showroom-like shine.",
+benefit: "Restores color and shine to faded plastics, protects against harmful UV rays, and prevents future damage. Keeps your car's interior and exterior plastic parts looking fresh and new.",
+useTips: "Clean the surface thoroughly before use. Apply the restorer evenly with a microfiber cloth. Let it dry to see a noticeable difference in the surface finish.",
+},
+
+AC002: {
+name: "CAR INTERIOR POLISH 200ml",
+category: "AUTO CARE",
+code: "AC002",
+mrp: 250.00,
+discountPrice: 210.00,
+businessValue: 50,
+description: "A specially formulated polish for maintaining the shine and cleanliness of your car's interior surfaces, keeping them looking brand new.",
+benefit: "Cleans and enhances the gloss of dashboards, leather, and vinyl surfaces. Provides anti-static properties to repel dust and maintain cleanliness for longer.",
+useTips: "Spray a small amount onto a soft cloth. Wipe it gently over the desired interior surface. Buff lightly for a natural shine.",
+},
+
+AC003: {
+name: "CAR SCREEN WASH Liquid 200ml",
+category: "AUTO CARE",
+code: "AC003",
+mrp: 250.00,
+discountPrice: 210.00,
+businessValue: 50,
+description: "An advanced cleaning liquid for car windshields and windows, removing dirt, grime, and water spots effectively.",
+benefit: "Improves visibility by eliminating streaks, smudges, and grime. Enhances windshield clarity for safe driving.",
+useTips: "Dilute the liquid as per instructions. Apply using a spray bottle or directly into the windshield washer tank for on-the-go cleaning.",
+},
+
+AC004: {
+name: "CAR DASHBOARD Shine 100gm",
+category: "AUTO CARE",
+code: "AC004",
+mrp: 285.00,
+discountPrice: 240.00,
+businessValue: 58,
+description: "A specialized shine formula designed for car dashboards, offering a glossy, non-greasy finish that lasts long.",
+benefit: "Protects against UV damage and fading while restoring the natural look of dashboards and trims.",
+useTips: "Apply a small amount onto a clean, dry cloth. Gently spread across the dashboard and buff to a smooth finish.",
+},
+
+AC005: {
+name: "CAR Ultra Foam SHAMPOO 200ml",
+category: "AUTO CARE",
+code: "AC005",
+mrp: 145.00,
+discountPrice: 120.00,
+businessValue: 29,
+description: "A high-foam car shampoo that lifts dirt and grime effectively while being gentle on your car's paint.",
+benefit: "Produces a rich foam that cleans thoroughly without stripping wax or protective coatings. Leaves your car shining and streak-free.",
+useTips: "Mix with water as directed. Apply using a sponge or foam cannon, and rinse thoroughly for a spotless finish.",
+},
+
+AC006: {
+name: "G.COAT WINDSHIELD PROTECTOR 50ml",
+category: "AUTO CARE",
+code: "AC006",
+mrp: 540.00,
+discountPrice: 450.00,
+businessValue: 105,
+description: "A cutting-edge windshield protector that provides a hydrophobic coating, repelling water and improving driving visibility.",
+benefit: "Enhances safety by repelling rain and reducing glare. Long-lasting and easy to apply.",
+useTips: "Clean the windshield thoroughly. Apply the protector evenly in circular motions. Let it cure before exposing to water.",
+},
+
+AC007: {
+name: "WATER SPOT REMOVER 200ml",
+category: "AUTO CARE",
+code: "AC007",
+mrp: 520.00,
+discountPrice: 480.00,
+businessValue: 115,
+description: "An effective solution for removing water spots and mineral deposits from your vehicle's surfaces, restoring clarity and shine.",
+benefit: "Eliminates stubborn water stains from glass, paint, and chrome without damaging the surface. Leaves a streak-free, polished finish.",
+useTips: "Spray directly onto the affected area. Use a microfiber cloth to scrub gently and wipe away the residue for a clean look.",
+}
+
+
+
+
+
+
+// Home Care Products Details
+        // (HC)
+        // HC1101: {
+        //   name: "பேப்ரிக் லிக்யூட் சோப் ஆயில் | FABRICARE LIQUID DETERGENT 500ml",
+        //   category: "HOME CARE",
+        //   code: "HC1101",
+        //   mrp: 215.00,
+        //   discountPrice: 195.00,
+        //   businessValue: 40,
+        //   description: "A liquid laundry detergent formulated for cleaning and removing stains from fabrics effectively. Suitable for washing clothes, linens, and other textile items.",
+        //   benefit: "Provides deep cleaning and stain removal while being gentle on fabrics.",
+        // },
+        // HC1102: {
+        //   name: "ஜி ஆர் சூப்பர் க்ளோவ் டிஷ் வாஷ் | GR SUPER GLOW DISH WASH 500ml",
+        //   category: "HOME CARE",
+        //   code: "HC1102",
+        //   mrp: 166.00,
+        //   discountPrice: 148.00,
+        //   businessValue: 30,
+        //   description: "A dishwashing liquid designed for cleaning dishes, utensils, and cookware. It helps cut through grease and food residue, leaving dishes sparkling clean.",
+        //   benefit: "Effective grease-cutting formula, leaving dishes spotlessly clean with a fresh fragrance.",
+        // },
+        // HC1103: {
+        //   name: "ஜி ஆர் ஃலோரெக்ஸ் ஃலோர் கிளீனர் | GR FLOREX FLOOR CLEANER 500ml",
+        //   category: "HOME CARE",
+        //   code: "HC1103",
+        //   mrp: 138.00,
+        //   discountPrice: 127.00,
+        //   businessValue: 26,
+        //   description: "A floor cleaning solution suitable for various types of floor surfaces, including tiles, marble, and hardwood. It helps remove dirt, grime, and stains while leaving a fresh scent.",
+        //   benefit: "Efficiently cleans and refreshes floor surfaces, providing a streak-free finish.",
+        // },
+        // HC1104: {
+        //   name: "டாய்லெட் கிளீனர் | GR SANITONE TOILET CLEANER 500ml",
+        //   category: "HOME CARE",
+        //   code: "HC1104",
+        //   mrp: 155.00,
+        //   discountPrice: 142.00,
+        //   businessValue: 0,
+        //   description: "A powerful toilet cleaner formulated to eliminate stains, odors, and germs, leaving your toilet sparkling clean.",
+        //   benefit: "Strengthens immune response, helping to fend off common illnesses. Contains antioxidants and vitamins for optimal health support. Promotes overall wellness and vitality.",
+        // },
+        // HC1105: {
+        //   name: "ஜி ஆர் ஃபேப்ரிக் ஆஃப்டர் வாஷ் |GR FABRICOOL AFTER WASH 250ml",
+        //   category: "HOME CARE",
+        //   code: "HC1105",
+        //   mrp: 146.00,
+        //   discountPrice: 126.00,
+        //   businessValue: 11,
+        //   description: "A premium fabric conditioner designed to soften and refresh your laundry, leaving fabrics feeling luxurious and easy to care for.",
+        //   benefit: "Enhances softness, making clothes comfortable against the skin. Reduces static cling, preventing garments from sticking together. Infuses a long- lasting fragrance, keeping your laundry smelling fresh. Helps maintain color and reduce fading, prolonging the life of your fabrics.",
+        // },
+        // HC1106: {
+        //   name: "கிட்சன் கிளீனர் ஸ்க்ரப் | KITCHEN SCRUB 3pcs (with SS Thread)",
+        //   category: "HOME CARE",
+        //   code: "HC1106",
+        //   mrp: 68.00,
+        //   discountPrice: 64.00,
+        //   businessValue: 0,
+        //   description: "A durable and efficient kitchen scrub designed for heavy-duty cleaning, perfect for scrubbing away tough food residues and stains from utensils and surfaces.",
+        //   benefit: "Tough on grime but gentle on surfaces, ensuring your kitchen stays spotless without scratching. Ergonomic design provides a comfortable grip, making cleaning tasks quick and easy. Versatile for various kitchen items, from cookware to countertops, helping maintain a hygienic cooking environment.",
+        // },
+        // HC1108: {
+        //   name: "மல்டி பர்ப்பஸ் கிளீனிங் ஸ்க்ரப்பர் | MULTI-PURPOSE CLEANING SCRUBBER 1pc",
+        //   category: "HOME CARE",
+        //   code: "HC1108",
+        //   mrp: 135.00,
+        //   discountPrice: 90.00,
+        //   businessValue: 0,
+        //   description: "A versatile cleaning scrubber designed to tackle tough grime and stains on various surfaces, ensuring a deep clean with minimal effort.",
+        //   benefit: "Effectively removes dirt, grease, and stubborn stains from kitchens, bathrooms, and more. Safe for use on multiple surfaces, including countertops, appliances, and tiles. Ergonomic design for comfortable handling, making cleaning easier and more efficient.",
+        // },
+
+
+        // // (CE)
+        // CE1501: {
+        //   name: "மல்டி பர்ப்பஸ் ஸ்டைன் ரிமூவர்  | MULTI-PURPOSE STAIN REMOVER 240ml",
+        //   category: "HOME CARE",
+        //   code: "CE1501",
+        //   mrp: 269.00,
+        //   discountPrice: 248.00,
+        //   businessValue: 0,
+        //   description: "A powerful, versatile stain remover designed to tackle a wide range of tough stains and germs on various surfaces.",
+        //   benefit: "Effectively removes stains from fabric, carpets, and hard surfaces. Safe for use on multiple materials without causing damage. Saves time and effort with quick stain-lifting action.",
+        // },
+        // CE1502: {
+        //   name: "பாத்ரூம் டைல்ஸ் கிளீனர் | BATHROOM TILES CLEANER 500ml",
+        //   category: "HOME CARE",
+        //   code: "CE1502",
+        //   mrp: 390.00,
+        //   discountPrice: 360.00,
+        //   businessValue: 0,
+        //   description: "A powerful and effective cleaner specifically formulated to tackle tough stains, soap scum, and mildew on bathroom tiles, leaving surfaces sparkling clean.",
+        //   benefit: "Deep cleans and sanitizes, ensuring your bathroom tiles are free from bacteria and grime. Fast-acting formula saves time, allowing for quick and efficient cleaning. Safe for various tile materials, maintaining the integrity and shine of your surfaces.",
+        // },
+
+        // //(AC)
+        // AC1401: {
+        //   name: "கார் பிளாஸ்டிக் ரீஸ்டோரர் | CAR PLASTIC RESTORER 250ml",
+        //   category: "HOME CARE",
+        //   code: "AC1401",
+        //   mrp: 499.00,
+        //   discountPrice: 459.00,
+        //   businessValue: 0,
+        //   description: " A premium formula designed to rejuvenate and restore faded and weathered plastic surfaces in your vehicle.",
+        //   benefit: " Revives dull and faded plastics, giving them a like-new appearance. Forms a protective barrier against harmful UV rays, preventing future fading and cracking. Provides extended durability, ensuring your vehicle’s plastic surfaces stay looking great for longer.",
+        // },
+        // AC1402: {
+        //   name: "கார் டயர் அல்ட்ரா பிளாக் ஷைனர் | CAR TYER ULTRA BLACK SHINER 250ML",
+        //   category: "HOME CARE",
+        //   code: "AC1402",
+        //   mrp: 499.00,
+        //   discountPrice: 459.00,
+        //   businessValue: 0,
+        //   description: "A premium formula that gives your car tires a deep, long-lasting black shine, enhancing the overall appearance of your vehicle.",
+        //   benefit: "Provides a rich, ultra-black finish to tires. Long-lasting shine that resists dirt and fading. Protects tires from cracking and UV damage. Easy to apply for a sleek, showroom-ready look. Suitable for all tire types.",
+        // },
+        // AC1403: {
+        //   name: "கார் ஸ்கிரீன் வாஷ் | CAR SCREEN WASH 250ml",
+        //   category: "HOME CARE",
+        //   code: "AC1403",
+        //   mrp: 499.00,
+        //   discountPrice: 459.00,
+        //   businessValue: 0,
+        //   description: "A powerful cleaning solution designed to keep your car's windshield clear and spotless, ensuring optimal visibility during every drive.",
+        //   benefit: "Effectively removes dirt, grime, and bugs from the windshield. Enhances visibility for safer driving in all weather conditions. Streak-free formula for a crystal-clear finish. Helps prevent watermarks and smudges on the glass. Suitable for all types of vehicles.",
+        // },
+        // AC1404: {
+        //   name: "கார் டேஷ்போர்டு & இன்டீரியர் பாலிஷ் | CAR DASHBOARD & INTERIOR POLISH 250ml",
+        //   category: "HOME CARE",
+        //   code: "AC1404",
+        //   mrp: 499.00,
+        //   discountPrice: 459.00,
+        //   businessValue: 0,
+        //   description: "A specialized polish formulated to clean, protect, and enhance the appearance of your vehicle's dashboard and interior surfaces.",
+        //   benefit: "Effectively removes dirt, grime, and fingerprints, leaving surfaces spotless. Leaves a sleek, glossy finish that revitalizes the look of your dashboard and interior surfaces. Shields interior materials from harmful UV rays, preventing fading and cracking.",
+        // },
+        // AC1405: {
+        //   name: "கார் பாடி வாஷ் ஷாம்பூ கேர் | CAR BODY WASH SHAMPOO CARE 250ml",
+        //   category: "HOME CARE",
+        //   code: "AC1405",
+        //   mrp: 249.00,
+        //   discountPrice: 204.00,
+        //   businessValue: 81_17,//THERE ARE TWO VALUE PV AND BP
+        //   description: "A high-quality shampoo formulated with ultra foam technology to provide a deep clean while enhancing your vehicle's shine.",
+        //   benefit: "Gentle yet effective cleaning formula that is safe for all car surfaces. Creates a rich lather that helps lift and remove stubborn dirt. Leaves a protective layer, enhancing the shine and reducing future dirt buildup. pH-balanced to maintain your car's paint integrity. Easy to rinse off, saving you time and effort during washing.",
+        // },
+        // AC1406: {
+        //   name: "ஜி கோட் விண்ட் ஷீல்டு ப்ரொடக்டர் | G.COAT WINDSHIELD PROTECTOR 50ml",
+        //   category: "AUTO CARE",
+        //   code: "AC1406",
+        //   mrp: 580.00,
+        //   discountPrice: 520.00,
+        //   businessValue: 0,
+        //   description: "A protective solution designed to safeguard windshields from damage and dirt while improving aerodynamics, ensuring clear visibility and smoother driving.",
+        //   benefit: "Shields windshields from cracks, chips, and scratches. Repels dust, rain, and debris for improved visibility. Easy to apply and remove, maintaining a clean and clear surface. Enhances driving safety by reducing glare and water accumulation.",
+        // },
+
+        // // Personal Care Products Details
+        // // (PC)
+        // PC1301: {
+        //   name: "ஆலோ நோவா மில்க் சோப் | ALOENOVA (Aloevera Milk Soap) 80gm",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1301",
+        //   mrp: 60.00,
+        //   discountPrice: 0.00,
+        //   businessValue: 11,
+        //   description: "A gentle, moisturizing soap infused with nourishing aloe vera and milk for a refreshing cleanse.",
+        //   benefit: "Hydrates and softens skin, leaving it smooth and supple. Soothes irritation and promotes skin healing. Ideal for all skin types, providing a natural glow.",
+        // },
+        // PC1302: {
+        //   name: "ஆலோ நோவா லெமன் கிராஸ் சோப் | ALOENOVA (Lemon Grass Soap) 100gm",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1302",
+        //   mrp: 60.00,
+        //   discountPrice: 55.00,
+        //   businessValue: 11,
+        //   description: "A refreshing soap bar made with natural lemongrass extract, providing a rejuvenating cleanse for the skin to improves the skin tone.",
+        //   benefit: "Cleanses and purifies the skin. Offers antibacterial properties. Leaves a refreshing scent and revitalizes the senses.",
+        // },
+        // PC1303: {
+        //   name: "ரெட் ஆனியன் ஹேர் ஆயில் | RED ONION HAIR OIL 200ml",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1303",
+        //   mrp: 250.00,
+        //   discountPrice: 210.00,
+        //   businessValue: 32,//THERE ARE TWO VALUE PV AND BP
+        //   description: "A nourishing conditioner designed to hydrate and detangle hair, leaving it soft, smooth, and manageable.",
+        //   benefit: "Moisturizes and softens hair, preventing dryness and frizz. Detangles hair, making it easier to comb and style. Strengthens hair strands, reducing breakage and split ends. Adds shine and luster to hair, enhancing its overall appearance.",
+        // },
+        // PC1304: {
+        //   name: "பாடி லோஷன் | BODY LOTION 200ml",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1304",
+        //   mrp: 158.00,
+        //   discountPrice: 142.00,
+        //   businessValue: 0,
+        //   description: "A moisturizing lotion that soothes and hydrates the skin, leaving it smooth and soft.",
+        //   benefit: "Provides long-lasting hydration. Nourishes and softens the skin. Absorbs quickly without greasy residue.",
+        // },
+        // PC1305: {
+        //   name: "ஆன்டி டேண்ட்ரப் ஷாம்பூ | ANTI-DANDRUFF SHAMPOO 200ML",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1305",
+        //   mrp: 195.00,
+        //   discountPrice: 170.00,
+        //   businessValue: 35,
+        //   description: "A specialized shampoo formulated to effectively combat dandruff while nourishing and soothing the scalp.",
+        //   benefit: "Eliminates dandruff and reduces scalp irritation for a healthier scalp. Contains active ingredients that help control flaking and itching. Promotes hair shine and softness, leaving hair looking vibrant. Suitable for all hair types, ensuring a gentle yet effective cleanse.",
+        // },
+        // PC1306: {
+        //   name: "சில்க் சைன் ஷாம்பூ | HERBAL SHAMPOO 200ml",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1306",
+        //   mrp: 185.00,
+        //   discountPrice: 0.00,
+        //   businessValue: 0,
+        //   description: "A herbal shampoo that makes your hair soft and shiny.",
+        //   benefit: "Promotes smooth, shiny, and silky hair. Strengthens hair with natural herbal ingredients. Gently cleanses without stripping natural oils. Helps reduce frizz and adds softness.",
+        // },
+        // PC1307: {
+        //   name: "பாடி வாஷ் | BODY WASH 200ml",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1307",
+        //   mrp: 175.00,
+        //   discountPrice: 160.00,
+        //   businessValue: 0,
+        //   description: "A gentle, refreshing body wash that hydrates and softens the skin.",
+        //   benefit: "Removes dirt, oil, and impurities without stripping the skin's natural moisture. Enriched with moisturizing ingredients to keep skin soft and smooth. Gentle enough for sensitive skin and daily use.",
+        // },
+
+        // PC1309: {
+        //   name: "ஃபேஸ் வாஷ் கேக் | FACE WASH CAKE 30gml",
+        //   category: "PERSONAL CARE",
+        //   code: "PC1309",
+        //   mrp: 110.00,
+        //   discountPrice: 99.00,
+        //   businessValue: 0,
+        //   description: "A solid face wash in the form of a cake, designed to cleanse the skin deeply while being eco-friendly and convenient.",
+        //   benefit: "Gently cleanses the skin, removing dirt and excess oil. Compact and travel-friendly with minimal packaging. Enriched with moisturizing and soothing natural ingredients. Suitable for all skin types, leaving the skin soft and refreshed.",
+        // },
+
+        // //28 th product (towel) data missing
+
+
+        // // Health care Products Details
+        // //(CT)
+        // CT1201: {
+        //   name: "மொரிங்கோ கேப்சுயூல்ஸ் | MORINGO CAPSULES 60 tablets",
+        //   category: "HEALTH CARE",
+        //   code: "CT1201",
+        //   mrp: 975.00,
+        //   discountPrice: 781.00,
+        //   businessValue: 0,
+        //   description: " A natural dietary supplement designed to enhance your immune system and support overall health.",
+        //   benefit: "Strengthens immune response, helping to fend off common illnesses. Contains antioxidants and vitamins for optimal health support. Promotes overall wellness and vitality.",
+        // },
+        // //12 (JOINT PAIN RELIEVER) & 13 (STAMINA BOOSTER) data missing
+        // CT1204: {
+        //   name: "முருங்கோ டீ | GR NATURE FRESH ORGANIC MORINGA TEA 50gm",
+        //   category: "HEALTH CARE",
+        //   code: "CT1204",
+        //   mrp: 325.00,
+        //   discountPrice: 285.00,
+        //   businessValue: 0,
+        //   description: "A refreshing and natural blend of premium organic tea leaves, offering a pure and wholesome tea experience with energy boost and digestive wellness.",
+        //   benefit: "Rich in antioxidants. Supports digestion and boosts immunity. Free from chemicals and additives.",
+        // },
